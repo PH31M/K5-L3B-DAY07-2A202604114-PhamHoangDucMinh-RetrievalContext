@@ -1,0 +1,142 @@
+[
+  {
+    "id": "dev_01",
+    "split": "dev",
+    "question": "What was documented in the International Debt Report 2025 regarding external debt burdens?",
+    "answerable": true,
+    "expected_behavior": "search_and_answer"
+  },
+  {
+    "id": "dev_02",
+    "split": "dev",
+    "question": "How are external shocks absorbed differently in economies with flexible versus fixed exchange rate regimes?",
+    "answerable": true,
+    "expected_behavior": "search_and_answer"
+  },
+  {
+    "id": "dev_03",
+    "split": "dev",
+    "question": "What percentage of GDP did trade openness reach across low- and middle-income countries in 2025?",
+    "answerable": true,
+    "expected_behavior": "search_and_answer"
+  },
+  {
+    "id": "dev_04",
+    "split": "dev",
+    "question": "Why does having external debt predominantly in foreign currencies increase economic vulnerability during global shocks?",
+    "answerable": true,
+    "expected_behavior": "search_and_answer"
+  },
+  {
+    "id": "dev_05",
+    "split": "dev",
+    "question": "What was the total volume of external debt stocks in LMICs by the end of 2025, and how much had it risen since 2015?",
+    "answerable": true,
+    "expected_behavior": "search_and_answer"
+  },
+  {
+    "id": "dev_06",
+    "split": "dev",
+    "question": "In the transmission of external shocks, to what level did headline inflation rise in commodity-importing LMICs by June 2026 following the Middle East conflict?",
+    "answerable": true,
+    "expected_behavior": "search_and_answer"
+  },
+  {
+    "id": "dev_07",
+    "split": "dev",
+    "question": "Why do external shocks tend to have larger and more persistent impacts in low-income and fragile economies?",
+    "answerable": true,
+    "expected_behavior": "search_and_answer"
+  },
+  {
+    "id": "dev_08",
+    "split": "dev",
+    "question": "How do stabilization funds help commodity-exporting nations cope with fiscal procyclicality?",
+    "answerable": true,
+    "expected_behavior": "search_and_answer"
+  },
+  {
+    "id": "dev_09",
+    "split": "dev",
+    "question": "What proportion of government revenues was absorbed by domestic debt service in IDA countries by 2025?",
+    "answerable": true,
+    "expected_behavior": "search_and_answer"
+  },
+  {
+    "id": "dev_10",
+    "split": "dev",
+    "question": "In the analysis of debt sustainability and fiscal pressures, what were the average gross financing needs (GFNs) of IDA countries as a share of GDP in 2024 and 2025?",
+    "answerable": true,
+    "expected_behavior": "search_and_answer"
+  },
+  {
+    "id": "dev_11",
+    "split": "dev",
+    "question": "What three interconnected priorities are highlighted to address limited fiscal buffers and high debt vulnerabilities?",
+    "answerable": true,
+    "expected_behavior": "search_and_answer"
+  },
+  {
+    "id": "dev_12",
+    "split": "dev",
+    "question": "Regarding food import exposure, how does the share of food in merchandise imports relate to per capita income in LMICs?",
+    "answerable": true,
+    "expected_behavior": "search_and_answer"
+  },
+  {
+    "id": "dev_13",
+    "split": "dev",
+    "question": "For which food commodity groups are higher external debt burdens associated with greater import source diversity rather than lower diversity?",
+    "answerable": true,
+    "expected_behavior": "search_and_answer"
+  },
+  {
+    "id": "dev_14",
+    "split": "dev",
+    "question": "How did inflation expectations change among market participants following the February 2026 conflict?",
+    "answerable": true,
+    "expected_behavior": "search_and_answer"
+  },
+  {
+    "id": "dev_15",
+    "split": "dev",
+    "question": "How did domestic banks exposure to sovereign assets in IDA countries compare to banks in IBRD countries?",
+    "answerable": true,
+    "expected_behavior": "search_and_answer"
+  },
+  {
+    "id": "dev_16",
+    "split": "dev",
+    "question": "What was the exact central bank policy interest rate of the Bank of Ghana in December 2025?",
+    "answerable": false,
+    "expected_behavior": "search_and_abstain"
+  },
+  {
+    "id": "dev_17",
+    "split": "dev",
+    "question": "How many metric tons of chemical fertilizer were subsidized by the government of Kenya under its 2024 agricultural support package?",
+    "answerable": false,
+    "expected_behavior": "search_and_abstain"
+  },
+  {
+    "id": "dev_18",
+    "split": "dev",
+    "question": "What was the exact amount of bilateral debt relief approved by the Paris Club for Zambia in the first quarter of 2026?",
+    "answerable": false,
+    "expected_behavior": "search_and_abstain"
+  },
+  {
+    "id": "dev_19",
+    "split": "dev",
+    "question": "What percentage of Vietnam public debt was denominated in Japanese Yen (JPY) at the end of fiscal year 2025?",
+    "answerable": false,
+    "expected_behavior": "search_and_abstain"
+  },
+  {
+    "id": "dev_20",
+    "split": "dev",
+    "question": "What was the official unemployment rate in Nigeria in July 2025 following the removal of fuel subsidies?",
+    "answerable": false,
+    "expected_behavior": "search_and_abstain"
+  }
+]
