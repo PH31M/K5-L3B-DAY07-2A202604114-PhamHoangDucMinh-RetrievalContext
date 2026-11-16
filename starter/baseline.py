@@ -36,6 +36,8 @@ def validate(chunks, questions):
         ids.add(q['id'])
         if q.get('split') not in ('dev', 'test') or not isinstance(q.get('question'), str) or not q['question'].strip():
             raise ValueError(f"question {q['id']}: split hoặc question không hợp lệ")
+        if q.get('answerable') is False:
+            continue
         if not isinstance(q.get('expected_answer'), str) or not q['expected_answer'].strip():
             raise ValueError(f"question {q['id']}: expected_answer phải là chuỗi không rỗng")
         if not isinstance(q.get('gold'), list) or not q['gold']:
@@ -111,16 +113,17 @@ def main():
     parser.add_argument('--questions', required=True, type=Path)
     parser.add_argument('--split', required=True, choices=('dev', 'test'))
     parser.add_argument('--output', required=True, type=Path, help='Thư mục output; file cùng tên sẽ bị ghi đè')
+    parser.add_argument('--budget', type=int, default=1200, help='Ngân sách ký tự context (mặc định 1200)')
     args = parser.parse_args()
     chunks = json.loads(args.chunks.read_text(encoding='utf-8'))
     questions = json.loads(args.questions.read_text(encoding='utf-8'))
     # Do not inspect held-out test evidence during dev work.
-    selected = [q for q in questions if q.get('split') == args.split]
+    selected = [q for q in questions if q.get('split') == args.split and q.get('answerable') is not False]
     validate(chunks, selected)
     started = time.perf_counter()
     index = TfidfIndex(chunks)
     index_seconds = time.perf_counter() - started
-    traces = evaluate(index, selected)
+    traces = evaluate(index, selected, budget=args.budget)
     summary = {'strategy': 'tfidf', 'split': args.split, 'n': len(traces),
                'hit1': sum(t['hit1'] for t in traces), 'hit3': sum(t['hit3'] for t in traces),
                'context_hit': sum(t['context_hit'] for t in traces),

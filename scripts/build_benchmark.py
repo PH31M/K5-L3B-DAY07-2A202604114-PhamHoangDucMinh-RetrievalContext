@@ -1,0 +1,487 @@
+#!/usr/bin/env python3
+"""
+Tạo bộ Benchmark Dataset chuẩn 30 câu hỏi cho Day 7:
+- Tập Dev (20 câu): 15 câu có đáp án + 5 câu thiếu bằng chứng (abstain).
+- Tập Test (10 câu): 5 câu có đáp án + 5 câu thiếu bằng chứng (abstain).
+Định dạng lưu tại: data/questions.json
+"""
+
+import json
+from pathlib import Path
+
+
+def build_questions():
+    # 1. Đọc chunks để kiểm tra bằng chứng
+    chunks_path = Path("data/chunks.json")
+    if not chunks_path.exists():
+        raise FileNotFoundError("Chưa tìm thấy data/chunks.json! Hãy chạy scripts/export_chunks.py trước.")
+
+    with open(chunks_path, "r", encoding="utf-8") as f:
+        chunks = json.load(f)
+
+    # 2. Định nghĩa danh sách 30 câu hỏi
+    questions = [
+        # ==============================================================================
+        # DEV SET: 15 CÂU CÓ ĐÁP ÁN (dev_01 -> dev_15)
+        # ==============================================================================
+        {
+            "id": "dev_01",
+            "split": "dev",
+            "type": "direct",
+            "question": "What was documented in the International Debt Report 2025 regarding external debt burdens?",
+            "expected_answer": "It documented the scale of external debt burdens and their links to economic growth and vulnerability.",
+            "gold": [{
+                "source_id": "bookdata_01",
+                "page": 75,
+                "evidence": "International Debt Report 2025 documented the scale of external debt burdens and their links to economic growth and vulnerability"
+            }],
+            "answerable": True,
+            "expected_behavior": "search_and_answer",
+            "filter": {"section": "transmission_shocks"}
+        },
+        {
+            "id": "dev_02",
+            "split": "dev",
+            "type": "conditional",
+            "question": "How are external shocks absorbed differently in economies with flexible versus fixed exchange rate regimes?",
+            "expected_answer": "In flexible regimes, shocks are partly absorbed through currency movements, while in fixed regimes, pressure on the exchange rate can be cushioned using foreign reserves.",
+            "gold": [{
+                "source_id": "bookdata_01",
+                "page": 77,
+                "evidence": "in economies with flexible exchange rate regimes, the effects of external shocks are partly absorbed through currency movements. In economies with fixed exchange rate regimes, pressure on the exchange rate can be cushioned by using foreign reserves."
+            }],
+            "answerable": True,
+            "expected_behavior": "search_and_answer",
+            "filter": {"section": "transmission_shocks"}
+        },
+        {
+            "id": "dev_03",
+            "split": "dev",
+            "type": "direct",
+            "question": "What percentage of GDP did trade openness reach across low- and middle-income countries in 2025?",
+            "expected_answer": "Trade openness increased to about 48 percent of GDP in 2025, up from about 44 percent in the mid-2010s.",
+            "gold": [{
+                "source_id": "bookdata_01",
+                "page": 78,
+                "evidence": "trade openness, measured as the sum of exports and imports as a share of GDP, increased to about 48 percent in 2025, up from about 44 percent in the mid-2010s"
+            }],
+            "answerable": True,
+            "expected_behavior": "search_and_answer",
+            "filter": {"section": "transmission_shocks"}
+        },
+        {
+            "id": "dev_04",
+            "split": "dev",
+            "type": "paraphrase",
+            "question": "Why does having external debt predominantly in foreign currencies increase economic vulnerability during global shocks?",
+            "expected_answer": "Currency depreciation triggered by external shocks drives up debt service burdens and accelerates domestic inflation.",
+            "gold": [{
+                "source_id": "bookdata_01",
+                "page": 78,
+                "evidence": "where external debt tends to be denominated in foreign currencies, economic vulnerabilities can increase when external shocks lead to currency depreciation, causing an increase in debt service burdens and higher inflation."
+            }],
+            "answerable": True,
+            "expected_behavior": "search_and_answer",
+            "filter": {"section": "transmission_shocks"}
+        },
+        {
+            "id": "dev_05",
+            "split": "dev",
+            "type": "direct",
+            "question": "What was the total volume of external debt stocks in LMICs by the end of 2025, and how much had it risen since 2015?",
+            "expected_answer": "External debt stocks rose to $9.4 trillion by the end of 2025, an increase of $3.5 trillion since 2015.",
+            "gold": [{
+                "source_id": "bookdata_01",
+                "page": 79,
+                "evidence": "external debt stocks in LMICs rose to $9.4 trillion by the end of 2025, an increase of $3.5 trillion since 2015."
+            }],
+            "answerable": True,
+            "expected_behavior": "search_and_answer",
+            "filter": {"section": "transmission_shocks"}
+        },
+        {
+            "id": "dev_06",
+            "split": "dev",
+            "type": "direct",
+            "question": "In the transmission of external shocks, to what level did headline inflation rise in commodity-importing LMICs by June 2026 following the Middle East conflict?",
+            "expected_answer": "Headline inflation rose to 3.6 percent in June 2026, up from 2.6 percent before the conflict.",
+            "gold": [{
+                "source_id": "bookdata_01",
+                "page": 80,
+                "evidence": "The conflict in the Middle East involving major energy producers, which began at the end of February 2026, has caused a surge in headline inflation in these countries, to 3.6 percent in June 2026, from the preconflict level of 2.6 percent"
+            }],
+            "answerable": True,
+            "expected_behavior": "search_and_answer",
+            "filter": {"section": "transmission_shocks"}
+        },
+        {
+            "id": "dev_07",
+            "split": "dev",
+            "type": "conditional",
+            "question": "Why do external shocks tend to have larger and more persistent impacts in low-income and fragile economies?",
+            "expected_answer": "Because their domestic financial markets tend to be shallower than in other low- and middle-income countries.",
+            "gold": [{
+                "source_id": "bookdata_01",
+                "page": 82,
+                "evidence": "In both LICs and economies in fragile, conflict, and violence-affected environments or with institutional fragility, financial markets tend to be shallower than in other LMICs"
+            }],
+            "answerable": True,
+            "expected_behavior": "search_and_answer",
+            "filter": {"section": "transmission_shocks"}
+        },
+        {
+            "id": "dev_08",
+            "split": "dev",
+            "type": "direct",
+            "question": "How do stabilization funds help commodity-exporting nations cope with fiscal procyclicality?",
+            "expected_answer": "By saving excess revenues during commodity booms and deploying them when prices and revenues collapse.",
+            "gold": [{
+                "source_id": "bookdata_01",
+                "page": 83,
+                "evidence": "stabilization funds, especially in commodity-exporting LMICs, can mitigate the procyclicality of fiscal policy by saving revenues during booms and deploying them when commodity prices and revenues collapse."
+            }],
+            "answerable": True,
+            "expected_behavior": "search_and_answer",
+            "filter": {"section": "transmission_shocks"}
+        },
+        {
+            "id": "dev_09",
+            "split": "dev",
+            "type": "direct",
+            "question": "What proportion of government revenues was absorbed by domestic debt service in IDA countries by 2025?",
+            "expected_answer": "The average domestic debt service-to-revenues ratio more than trebled, reaching almost 30 percent by 2025.",
+            "gold": [{
+                "source_id": "bookdata_01",
+                "page": 85,
+                "evidence": "whereas average external debt service underwent a U-shaped trajectory to end up at over 17 percent of revenues by 2025, the average domestic debt service-to-revenues ratio more than trebled, reaching almost 30 percent by 2025"
+            }],
+            "answerable": True,
+            "expected_behavior": "search_and_answer",
+            "filter": {"section": "fiscal_pressures"}
+        },
+        {
+            "id": "dev_10",
+            "split": "dev",
+            "type": "direct",
+            "question": "In the analysis of debt sustainability and fiscal pressures, what were the average gross financing needs (GFNs) of IDA countries as a share of GDP in 2024 and 2025?",
+            "expected_answer": "Approximately 8.2 percent of GDP in 2024, before rising to 8.7 percent in 2025.",
+            "gold": [{
+                "source_id": "bookdata_01",
+                "page": 86,
+                "evidence": "GFNs subsequently moderated but remained well above their prepandemic average, at approximately 8.2 percent of GDP in 2024, before rising to 8.7 percent in 2025."
+            }],
+            "answerable": True,
+            "expected_behavior": "search_and_answer",
+            "filter": {"section": "fiscal_pressures"}
+        },
+        {
+            "id": "dev_11",
+            "split": "dev",
+            "type": "direct",
+            "question": "What three interconnected priorities are highlighted to address limited fiscal buffers and high debt vulnerabilities?",
+            "expected_answer": "Revenue mobilization and maintaining sound debt management, adopting countercyclical fiscal strategies, and investing in fiscal institutions.",
+            "gold": [{
+                "source_id": "bookdata_01",
+                "page": 92,
+                "evidence": "The interaction of limited fiscal buffers, elevated debt vulnerabilities, and weak policy execution points to three interconnected priorities: revenue mobilization and maintaining sound debt management, adopting countercyclical fiscal strategies, and investing in fiscal institutions."
+            }],
+            "answerable": True,
+            "expected_behavior": "search_and_answer",
+            "filter": {"section": "fiscal_pressures"}
+        },
+        {
+            "id": "dev_12",
+            "split": "dev",
+            "type": "direct",
+            "question": "Regarding food import exposure, how does the share of food in merchandise imports relate to per capita income in LMICs?",
+            "expected_answer": "The share of food in merchandise imports generally declines as per capita income rises, whereas economies with higher external debt burdens relative to exports have higher food import shares.",
+            "gold": [{
+                "source_id": "bookdata_01",
+                "page": 96,
+                "evidence": "the share of food in merchandise imports generally declines as income per capita rises (figure 2.13, panel a). By contrast, economies with larger external debt burdens relative to exports also tend to have higher food import shares"
+            }],
+            "answerable": True,
+            "expected_behavior": "search_and_answer",
+            "filter": {"section": "food_import"}
+        },
+        {
+            "id": "dev_13",
+            "split": "dev",
+            "type": "direct",
+            "question": "For which food commodity groups are higher external debt burdens associated with greater import source diversity rather than lower diversity?",
+            "expected_answer": "Oils and fats, and legumes, nuts, and seeds.",
+            "gold": [{
+                "source_id": "bookdata_01",
+                "page": 100,
+                "evidence": "By contrast, higher debt burdens are associated with greater import source diversity for oils and fats, and for legumes, nuts, and seeds."
+            }],
+            "answerable": True,
+            "expected_behavior": "search_and_answer",
+            "filter": {"section": "food_import"}
+        },
+        {
+            "id": "dev_14",
+            "split": "dev",
+            "type": "direct",
+            "question": "How did inflation expectations change among market participants following the February 2026 conflict?",
+            "expected_answer": "Inflation expectations for 2026 rose from 2.7 percent according to preconflict February surveys to 3.4 percent in July.",
+            "gold": [{
+                "source_id": "bookdata_01",
+                "page": 80,
+                "evidence": "Among market participants, inflation expectations for 2026 have also risen, from 2.7 percent according to preconflict February surveys to 3.4 percent in July."
+            }],
+            "answerable": True,
+            "expected_behavior": "search_and_answer",
+            "filter": {"section": "transmission_shocks"}
+        },
+        {
+            "id": "dev_15",
+            "split": "dev",
+            "type": "direct",
+            "question": "How did domestic banks exposure to sovereign assets in IDA countries compare to banks in IBRD countries?",
+            "expected_answer": "Domestic banks in IDA countries have consistently held a greater share of their balance sheets in sovereign assets than banks in IBRD countries have.",
+            "gold": [{
+                "source_id": "bookdata_01",
+                "page": 90,
+                "evidence": "domestic banks in IDA countries have consistently held a greater share of their balance sheets in sovereign assets than banks in IBRD countries have"
+            }],
+            "answerable": True,
+            "expected_behavior": "search_and_answer",
+            "filter": {"section": "fiscal_pressures"}
+        },
+
+        # ==============================================================================
+        # DEV SET: 5 CÂU THIẾU EVIDENCE (dev_16 -> dev_20)
+        # ==============================================================================
+        {
+            "id": "dev_16",
+            "split": "dev",
+            "type": "abstain",
+            "question": "What was the exact central bank policy interest rate of the Bank of Ghana in December 2025?",
+            "expected_answer": "Không đủ bằng chứng trong tài liệu để trả lời.",
+            "gold": [],
+            "answerable": False,
+            "expected_behavior": "search_and_abstain",
+            "absence_reason": "Chương 2 chỉ phân tích xu hướng lãi suất trái phiếu toàn cầu và điều kiện tài chính vĩ mô của nhóm LMIC, không thống kê mức lãi suất điều hành cụ thể của Ngân hàng Trung ương Ghana vào tháng 12/2025."
+        },
+        {
+            "id": "dev_17",
+            "split": "dev",
+            "type": "abstain",
+            "question": "How many metric tons of chemical fertilizer were subsidized by the government of Kenya under its 2024 agricultural support package?",
+            "expected_answer": "Không đủ bằng chứng trong tài liệu để trả lời.",
+            "gold": [],
+            "answerable": False,
+            "expected_behavior": "search_and_abstain",
+            "absence_reason": "Tài liệu thảo luận về an ninh lương thực và phụ thuộc nhập khẩu lương thực ở các nước thu nhập thấp (trang 96-102), nhưng không chứa số liệu trợ cấp phân bón cụ thể của Kenya năm 2024."
+        },
+        {
+            "id": "dev_18",
+            "split": "dev",
+            "type": "abstain",
+            "question": "What was the exact amount of bilateral debt relief approved by the Paris Club for Zambia in the first quarter of 2026?",
+            "expected_answer": "Không đủ bằng chứng trong tài liệu để trả lời.",
+            "gold": [],
+            "answerable": False,
+            "expected_behavior": "search_and_abstain",
+            "absence_reason": "Chương 2 đề cập đến cơ chế tái cơ cấu nợ và áp lực trả nợ chung, nhưng không nêu số tiền xóa nợ cụ thể được Câu lạc bộ Paris phê duyệt cho Zambia vào quý 1 năm 2026."
+        },
+        {
+            "id": "dev_19",
+            "split": "dev",
+            "type": "abstain",
+            "question": "What percentage of Vietnam public debt was denominated in Japanese Yen (JPY) at the end of fiscal year 2025?",
+            "expected_answer": "Không đủ bằng chứng trong tài liệu để trả lời.",
+            "gold": [],
+            "answerable": False,
+            "expected_behavior": "search_and_abstain",
+            "absence_reason": "Báo cáo phân tích việc nợ nước ngoài định danh bằng ngoại tệ nói chung (trang 78), nhưng không cung cấp tỷ trọng cơ cấu đồng tiền Yên Nhật trong nợ công của Việt Nam năm 2025."
+        },
+        {
+            "id": "dev_20",
+            "split": "dev",
+            "type": "abstain",
+            "question": "What was the official unemployment rate in Nigeria in July 2025 following the removal of fuel subsidies?",
+            "expected_answer": "Không đủ bằng chứng trong tài liệu để trả lời.",
+            "gold": [],
+            "answerable": False,
+            "expected_behavior": "search_and_abstain",
+            "absence_reason": "Tài liệu phân tích các cú sốc năng lượng và lạm phát nhập khẩu (trang 80), nhưng không có số liệu về tỷ lệ thất nghiệp chính thức của Nigeria sau khi bỏ trợ cấp nhiên liệu năm 2025."
+        },
+
+        # ==============================================================================
+        # TEST SET: 5 CÂU CÓ ĐÁP ÁN (test_01 -> test_05)
+        # ==============================================================================
+        {
+            "id": "test_01",
+            "split": "test",
+            "type": "conditional",
+            "question": "What external disruptions make economies that rely heavily on imports of goods and services especially vulnerable?",
+            "expected_answer": "Production shortfalls in major supplier countries, export restrictions, or supply chain disruptions.",
+            "gold": [{
+                "source_id": "bookdata_01",
+                "page": 77,
+                "evidence": "Economies that rely heavily on imports of goods and services for domestic activity are vulnerable to sudden changes in the external environment, such as production shortfalls in major supplier countries, export restrictions, or supply chain disruptions"
+            }],
+            "answerable": True,
+            "expected_behavior": "search_and_answer",
+            "filter": {"section": "transmission_shocks"}
+        },
+        {
+            "id": "test_02",
+            "split": "test",
+            "type": "direct",
+            "question": "How do drops in global commodity prices adversely affect commodity-exporting LMICs?",
+            "expected_answer": "They directly reduce export revenues and profits in commodity sectors, while indirectly deteriorating fiscal balances, terms of trade, and current account positions.",
+            "gold": [{
+                "source_id": "bookdata_01",
+                "page": 82,
+                "evidence": "Collapses in global commodity prices directly reduce export earnings and profits in the commodity-related sector, reducing domestic demand and activity. Revenue declines cause deterioration of fiscal positions and the debt service mechanism, while also leading to worsening terms of trade and current account balances."
+            }],
+            "answerable": True,
+            "expected_behavior": "search_and_answer",
+            "filter": {"section": "transmission_shocks"}
+        },
+        {
+            "id": "test_03",
+            "split": "test",
+            "type": "direct",
+            "question": "What global events after the pandemic shock contributed to elevated financing needs in IDA countries?",
+            "expected_answer": "The commodity price and inflation surge following the Russian invasion of Ukraine, and the sharp global monetary tightening beginning in 2022.",
+            "gold": [{
+                "source_id": "bookdata_01",
+                "page": 86,
+                "evidence": "Subsequent shocks, including the commodity price and inflation surge following the Russian Federation’s invasion of Ukraine, and the sharp global monetary tightening that began in 2022, further contributed to elevated financing needs."
+            }],
+            "answerable": True,
+            "expected_behavior": "search_and_answer",
+            "filter": {"section": "fiscal_pressures"}
+        },
+        {
+            "id": "test_04",
+            "split": "test",
+            "type": "conditional",
+            "question": "In the section on fiscal pressures and consolidation, how long did countries typically delay meaningful consolidation when facing primary deficits far above debt-stabilizing levels?",
+            "expected_answer": "Countries typically waited three to four years before embarking on meaningful fiscal consolidation.",
+            "gold": [{
+                "source_id": "bookdata_01",
+                "page": 93,
+                "evidence": "Where the primary deficit was significantly larger than what would stabilize debt, countries tended to wait three to four years before embarking on meaningful fiscal consolidation"
+            }],
+            "answerable": True,
+            "expected_behavior": "search_and_answer",
+            "filter": {"section": "fiscal_pressures"}
+        },
+        {
+            "id": "test_05",
+            "split": "test",
+            "type": "direct",
+            "question": "What specific reserve mechanisms and financial instruments can governments put in place in advance to mitigate immediate post-disaster fiscal impacts?",
+            "expected_answer": "Contingency reserves in the annual budget, natural disaster funds with clear usage rules, and state-contingent debt instruments or third-party disaster risk insurance.",
+            "gold": [{
+                "source_id": "bookdata_01",
+                "page": 95,
+                "evidence": "Governments can prepare for this tendency by establishing contingency reserves within the annual budget, natural disaster funds with clear rules governing their use and size calibrated to historical experience, and state-contingent debt instruments and other insurance mechanisms that transfer a portion of disaster risk to third parties"
+            }],
+            "answerable": True,
+            "expected_behavior": "search_and_answer",
+            "filter": {"section": "fiscal_pressures"}
+        },
+
+        # ==============================================================================
+        # TEST SET: 5 CÂU THIẾU EVIDENCE (test_06 -> test_10)
+        # ==============================================================================
+        {
+            "id": "test_06",
+            "split": "test",
+            "type": "abstain",
+            "question": "What was the total volume of local-currency green bonds issued by the government of Indonesia in 2025?",
+            "expected_answer": "Không đủ bằng chứng trong tài liệu để trả lời.",
+            "gold": [],
+            "answerable": False,
+            "expected_behavior": "search_and_abstain",
+            "absence_reason": "Tài liệu thảo luận về cơ cấu nợ trong nước và sự gia tăng của trái phiếu chính phủ (trang 88-91), nhưng không có số liệu về quy mô phát hành trái phiếu xanh của Indonesia năm 2025."
+        },
+        {
+            "id": "test_07",
+            "split": "test",
+            "type": "abstain",
+            "question": "What was the monthly consumer price index (CPI) headline inflation rate recorded in Argentina in September 2026?",
+            "expected_answer": "Không đủ bằng chứng trong tài liệu để trả lời.",
+            "gold": [],
+            "answerable": False,
+            "expected_behavior": "search_and_abstain",
+            "absence_reason": "Chương 2 chỉ cung cấp số liệu tổng hợp lạm phát của nhóm nước nhập khẩu hàng hóa đến tháng 6/2026 (trang 80), không có chỉ số CPI tháng 9/2026 của Argentina."
+        },
+        {
+            "id": "test_08",
+            "split": "test",
+            "type": "abstain",
+            "question": "What is the exact mathematical weighting formula used by the IMF to calculate SDR interest rate allocations in 2026?",
+            "expected_answer": "Không đủ bằng chứng trong tài liệu để trả lời.",
+            "gold": [],
+            "answerable": False,
+            "expected_behavior": "search_and_abstain",
+            "absence_reason": "Trang 105 trích dẫn thông cáo báo chí của World Bank về việc cải cách khung đánh giá tính bền vững nợ (LIC-DSF), nhưng không trình bày công thức toán học tính trọng số SDR của IMF."
+        },
+        {
+            "id": "test_09",
+            "split": "test",
+            "type": "abstain",
+            "question": "How many metric tons of milling wheat did the government of Egypt purchase from Romania under government tender in August 2025?",
+            "expected_answer": "Không đủ bằng chứng trong tài liệu để trả lời.",
+            "gold": [],
+            "answerable": False,
+            "expected_behavior": "search_and_abstain",
+            "absence_reason": "Tài liệu phân tích chung về mức độ tập trung thị trường và an ninh nhập khẩu ngũ cốc/lương thực (trang 96-101), không có số liệu khối lượng lúa mì cụ thể giữa Ai Cập và Romania năm 2025."
+        },
+        {
+            "id": "test_10",
+            "split": "test",
+            "type": "abstain",
+            "question": "What was the targeted primary budget surplus agreed between Pakistan and the IMF under their 2025 Extended Fund Facility review?",
+            "expected_answer": "Không đủ bằng chứng trong tài liệu để trả lời.",
+            "gold": [],
+            "answerable": False,
+            "expected_behavior": "search_and_abstain",
+            "absence_reason": "Tài liệu phân tích khoảng cách thâm hụt cơ bản ổn định nợ (trang 87-88), nhưng không đề cập đến thỏa thuận chỉ tiêu thâm hụt ngân sách cụ thể trong chương trình EFF của Pakistan với IMF năm 2025."
+        }
+    ]
+
+    # 3. Kiểm tra xác thực (Validation)
+    assert len(questions) == 30, f"Tổng số câu phải là 30, nhận được {len(questions)}"
+    dev_qs = [q for q in questions if q["split"] == "dev"]
+    test_qs = [q for q in questions if q["split"] == "test"]
+    assert len(dev_qs) == 20, f"Tập dev phải có 20 câu, nhận được {len(dev_qs)}"
+    assert len(test_qs) == 10, f"Tập test phải có 10 câu, nhận được {len(test_qs)}"
+
+    dev_ans = [q for q in dev_qs if q["answerable"]]
+    dev_abs = [q for q in dev_qs if not q["answerable"]]
+    assert len(dev_ans) == 15, f"Dev có đáp án phải là 15 câu, nhận được {len(dev_ans)}"
+    assert len(dev_abs) == 5, f"Dev thiếu evidence phải là 5 câu, nhận được {len(dev_abs)}"
+
+    test_ans = [q for q in test_qs if q["answerable"]]
+    test_abs = [q for q in test_qs if not q["answerable"]]
+    assert len(test_ans) == 5, f"Test có đáp án phải là 5 câu, nhận được {len(test_ans)}"
+    assert len(test_abs) == 5, f"Test thiếu evidence phải là 5 câu, nhận được {len(test_abs)}"
+
+    # Kiểm tra evidence quote nằm trọn trong đúng chunk
+    for q in questions:
+        if q["answerable"]:
+            assert len(q["gold"]) > 0, f"Câu {q['id']} có đáp án nhưng gold rỗng"
+            for g in q["gold"]:
+                matched = any(c["page"] == g["page"] and g["evidence"] in c["text"] for c in chunks)
+                assert matched, f"Câu {q['id']} (Trang {g['page']}): evidence không nằm trọn trong chunk nào:\n{g['evidence']}"
+
+    # 4. Ghi file data/questions.json
+    output_path = Path("data/questions.json")
+    with open(output_path, "w", encoding="utf-8") as f:
+        json.dump(questions, f, ensure_ascii=False, indent=2)
+
+    print(f"✅ Đã tạo thành công {len(questions)} câu hỏi chuẩn hóa tại: {output_path.resolve()}")
+    print(f"   - Tập Dev: {len(dev_qs)} câu ({len(dev_ans)} có đáp án + {len(dev_abs)} thiếu evidence)")
+    print(f"   - Tập Test: {len(test_qs)} câu ({len(test_ans)} có đáp án + {len(test_abs)} thiếu evidence)")
+
+
+if __name__ == "__main__":
+    build_questions()

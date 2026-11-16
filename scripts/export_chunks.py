@@ -55,7 +55,7 @@ def normalize_text(text: str) -> str:
 
 
 def by_paragraph(page_num: int, doc_id: str, source: str, text: str, page_meta: dict, max_size: int = 800) -> list[dict]:
-    """Cắt đoạn văn tự nhiên, gom cụm tối đa max_size ký tự (Strategy B tối ưu từ Day 6)."""
+    """Cắt đoạn văn tự nhiên, gom cụm tối đa max_size ký tự (Chuẩn Strategy B từ Day 6)."""
     if not text or not text.strip():
         return []
 
@@ -70,55 +70,53 @@ def by_paragraph(page_num: int, doc_id: str, source: str, text: str, page_meta: 
                 if len(s) <= max_size:
                     units.append(s)
                 else:
-                    for i in range(0, len(s), max_size):
-                        units.append(s[i:i + max_size].strip())
+                    step = max_size - 50
+                    for i in range(0, len(s), step):
+                        sub = s[i:i + max_size].strip()
+                        if sub:
+                            units.append(sub)
 
     chunks: list[dict] = []
-    current_unit: list[str] = []
-    current_len = 0
+    current_text = ""
     c_idx = 0
 
-    for unit in units:
-        unit_len = len(unit)
-        add_len = unit_len if not current_unit else unit_len + 2  # tính thêm ký tự "\n\n"
-        if current_len + add_len <= max_size:
-            current_unit.append(unit)
-            current_len += add_len
+    for u in units:
+        if not current_text:
+            current_text = u
+        elif len(current_text) + 1 + len(u) <= max_size:
+            current_text += " " + u
         else:
-            if current_unit:
-                chunk_text = "\n\n".join(current_unit).strip()
+            if len(current_text) >= 30:
                 meta = dict(page_meta)
                 meta.update({
                     "chunk_index": c_idx,
                     "strategy": "by_paragraph",
-                    "char_count": len(chunk_text),
+                    "char_count": len(current_text),
                 })
                 chunks.append({
                     "id": f"{doc_id}_p{page_num}_b{c_idx:03d}",
                     "source_id": doc_id,
                     "source": source,
                     "page": page_num,
-                    "text": chunk_text,
+                    "text": current_text,
                     "metadata": meta,
                 })
                 c_idx += 1
-            current_unit = [unit]
-            current_len = unit_len
+            current_text = u
 
-    if current_unit:
-        chunk_text = "\n\n".join(current_unit).strip()
+    if current_text and len(current_text) >= 30:
         meta = dict(page_meta)
         meta.update({
             "chunk_index": c_idx,
             "strategy": "by_paragraph",
-            "char_count": len(chunk_text),
+            "char_count": len(current_text),
         })
         chunks.append({
             "id": f"{doc_id}_p{page_num}_b{c_idx:03d}",
             "source_id": doc_id,
             "source": source,
             "page": page_num,
-            "text": chunk_text,
+            "text": current_text,
             "metadata": meta,
         })
 
@@ -207,7 +205,6 @@ def main():
 
     args = parser.parse_args()
 
-    # Kiểm tra đường dẫn PDF thay thế nếu đường dẫn mặc định không thấy
     if not args.pdf.exists():
         fallback_pdf = Path("data/bookdata_01.pdf")
         if fallback_pdf.exists():
