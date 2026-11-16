@@ -4,8 +4,10 @@
     "citation_support": [
       true
     ],
-    "answer_grade": 1,
-    "notes": "Trả lời một phần hoặc trích dẫn chưa tối ưu."
+    "answer_grade": 0,
+    "context_grade": 0,
+    "notes": "SAI: không nêu cú sốc nào (đứt gãy sản xuất, hạn chế xuất khẩu, gián đoạn chuỗi cung ứng), chỉ nói nhập khẩu = 34% GDP (đúng theo chunk nhưng lạc đề). Context không chứa p77.",
+    "reviewer": "claude-audit (đối chiếu từng câu với chunk gốc)"
   },
   {
     "query_id": "test_02",
@@ -13,7 +15,9 @@
       true
     ],
     "answer_grade": 1,
-    "notes": "Trả lời một phần hoặc trích dẫn chưa tối ưu."
+    "context_grade": 1,
+    "notes": "Một phần: nêu giảm doanh thu xuất khẩu nhưng thiếu cơ chế tài khóa, điều kiện thương mại, cán cân vãng lai. Context chỉ có p79.",
+    "reviewer": "claude-audit (đối chiếu từng câu với chunk gốc)"
   },
   {
     "query_id": "test_03",
@@ -21,15 +25,19 @@
       true
     ],
     "answer_grade": 2,
-    "notes": "Chính xác, đầy đủ bằng chứng và trích dẫn chuẩn xác."
+    "context_grade": 2,
+    "notes": "Khớp gold p86.",
+    "reviewer": "claude-audit (đối chiếu từng câu với chunk gốc)"
   },
   {
     "query_id": "test_04",
     "citation_support": [
-      true
+      false
     ],
-    "answer_grade": 1,
-    "notes": "Trả lời một phần hoặc trích dẫn chưa tối ưu."
+    "answer_grade": 0,
+    "context_grade": 0,
+    "notes": "SAI: trả lời \"khoảng 5 năm\" (gold 3–4 năm); con số 5 năm không có trong chunk được trích, chunk p93_b001 chứa đáp án đúng không vào context.",
+    "reviewer": "claude-audit (đối chiếu từng câu với chunk gốc)"
   },
   {
     "query_id": "test_05",
@@ -37,36 +45,43 @@
       true
     ],
     "answer_grade": 2,
-    "notes": "Chính xác, đầy đủ bằng chứng và trích dẫn chuẩn xác."
+    "context_grade": 2,
+    "notes": "Khớp gold p95 (thiếu phần khung quản lý rủi ro nhưng đủ ý chính).",
+    "reviewer": "claude-audit (đối chiếu từng câu với chunk gốc)"
   },
   {
     "query_id": "test_06",
     "citation_support": [],
     "abstention_correct": true,
-    "notes": "Từ chối đúng do tài liệu không chứa bằng chứng."
+    "notes": "ĐÚNG (từ chối): chủ đề không có trong tài liệu (đã tìm từ khóa trong cả 108 chunk Chương 2 và 270 chunk toàn văn).",
+    "reviewer": "claude-audit (đối chiếu từng câu với chunk gốc)"
   },
   {
     "query_id": "test_07",
     "citation_support": [],
     "abstention_correct": true,
-    "notes": "Từ chối đúng do tài liệu không chứa bằng chứng."
+    "notes": "ĐÚNG (từ chối): chủ đề không có trong tài liệu (đã tìm từ khóa trong cả 108 chunk Chương 2 và 270 chunk toàn văn).",
+    "reviewer": "claude-audit (đối chiếu từng câu với chunk gốc)"
   },
   {
     "query_id": "test_08",
     "citation_support": [],
     "abstention_correct": true,
-    "notes": "Từ chối đúng do tài liệu không chứa bằng chứng."
+    "notes": "ĐÚNG (từ chối): chủ đề không có trong tài liệu (đã tìm từ khóa trong cả 108 chunk Chương 2 và 270 chunk toàn văn).",
+    "reviewer": "claude-audit (đối chiếu từng câu với chunk gốc)"
   },
   {
     "query_id": "test_09",
     "citation_support": [],
     "abstention_correct": true,
-    "notes": "Từ chối đúng do tài liệu không chứa bằng chứng."
+    "notes": "ĐÚNG (từ chối): chủ đề không có trong tài liệu (đã tìm từ khóa trong cả 108 chunk Chương 2 và 270 chunk toàn văn).",
+    "reviewer": "claude-audit (đối chiếu từng câu với chunk gốc)"
   },
   {
     "query_id": "test_10",
     "citation_support": [],
     "abstention_correct": true,
-    "notes": "Từ chối đúng do tài liệu không chứa bằng chứng."
+    "notes": "ĐÚNG (từ chối): chủ đề không có trong tài liệu (đã tìm từ khóa trong cả 108 chunk Chương 2 và 270 chunk toàn văn).",
+    "reviewer": "claude-audit (đối chiếu từng câu với chunk gốc)"
   }
 ]

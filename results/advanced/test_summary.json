@@ -1,31 +1,31 @@
 {
   "split": "test",
   "total_cases": 30,
-  "total_passed": 29,
-  "overall_pass_rate": 96.67,
-  "meets_90pct_threshold": true,
+  "total_passed": 20,
+  "overall_pass_rate": 66.67,
+  "meets_90pct_threshold": false,
   "total_elapsed_seconds": 170.77,
   "avg_latency_ms": 5692.42,
   "by_category": {
     "table": {
-      "passed": 6,
+      "passed": 3,
       "total": 6,
-      "rate": 100.0
+      "rate": 50.0
     },
     "diagram": {
-      "passed": 4,
+      "passed": 3,
       "total": 5,
-      "rate": 80.0
+      "rate": 60.0
     },
     "chart": {
-      "passed": 5,
+      "passed": 2,
       "total": 5,
-      "rate": 100.0
+      "rate": 40.0
     },
     "multi_hop": {
-      "passed": 4,
+      "passed": 2,
       "total": 4,
-      "rate": 100.0
+      "rate": 50.0
     },
     "text": {
       "passed": 4,
@@ -37,5 +37,7 @@
       "total": 6,
       "rate": 100.0
     }
-  }
+  },
+  "label_source": "audit_by_reading_each_answer_vs_chunk",
+  "previous_auto_label_passed": 29
 }

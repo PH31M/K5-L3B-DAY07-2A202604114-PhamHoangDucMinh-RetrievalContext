@@ -71,7 +71,7 @@
 | **Baseline Dev (b=1200)** | 20/20 (100%) | 1.05 | 0: 1 \| 1: 1 \| 2: 13 (Mean: **1.80**) | 14/14 (100%) | 14/14 (100%) | 5/5 (100%) | 1/15 (6.67%) |
 | **Cải thiện 1 Dev (b=2400)** ★ | 20/20 (100%) | 1.00 | 0: 0 \| 1: 0 \| 2: 15 (Mean: **2.00**) | 15/15 (100%) | 15/15 (100%) | 5/5 (100%) | **0/15 (0.0%)** |
 | **Cải thiện 2 Dev (k=5, b=3600)** | 20/20 (100%) | 1.00 | 0: 0 \| 1: 0 \| 2: 15 (Mean: **2.00**) | 16/16 (100%) | 15/15 (100%) | 5/5 (100%) | 0/15 (0.0%) |
-| **Baseline Test (b=1200)** | 10/10 (100%) | 1.00 | 0: 0 \| 1: 3 \| 2: 2 (Mean: **1.40**) | 5/5 (100%) | 5/5 (100%) | 5/5 (100%) | 0/5 (0.0%) |
+| **Baseline Test (b=1200)** | 10/10 (100%) | 1.00 | 0: 2 \| 1: 1 \| 2: 2 (Mean: **1.00**) | 4/5 (80%) | 5/5 (100%) | 5/5 (100%) | 0/5 (0.0%) |
 | **Cấu hình đã chọn Test** ★ | 10/10 (100%) | 1.00 | 0: 0 \| 1: 0 \| 2: 5 (Mean: **2.00**) | 6/6 (100%) | 5/5 (100%) | 5/5 (100%) | **0/5 (0.0%)** |
 
 ### Bảng Mẫu Traces Chi tiết theo Từng Query ID (Tập Test)
@@ -99,12 +99,12 @@
 
 ---
 
-## Thử thách nâng cao (+15 điểm bonus)
+## Thử thách nâng cao (+15 điểm bonus) — chưa đạt ngưỡng
 
 - **Tài liệu, nguồn, quyền sử dụng, số trang và phiên bản:**
   - Toàn văn báo cáo *World Bank International Debt Report 2026* (`data/bookdata_full.pdf`).
   - Nguồn gốc: World Bank Open Knowledge Repository, bản công bố chính thức tháng 12/2025, dung lượng 14.3 MB, bản quyền CC BY 3.0 IGO.
-  - Quy mô tài liệu: **280 trang** (đạt và vượt xa điều kiện tối thiểu 100 trang của [ADVANCED.md](file:///Users/minh/GitHub-PMinh/K5-L3B-DAY07-2A202604114-PhamHoangDucMinh-RetrievalContext/ADVANCED.md)).
+  - Quy mô tài liệu: **280 trang** (đạt và vượt xa điều kiện tối thiểu 100 trang của [ADVANCED.md](../../ADVANCED.md)).
 - **Cách xử lý text, bảng, ảnh, biểu đồ; phạm vi index và phần chưa xử lý:**
   - Lập chỉ mục thành công **270 chunks đa phương thức** phủ kín toàn bộ 280 trang tại `data/multimodal_chunks.json`:
     - *Bảng biểu (130 chunks)*: Trích xuất có cấu trúc Table 1.1, Table 1.2 và 128 bảng tóm tắt nợ quốc gia (Country Summary Debt Tables) tại trang 138–265.
@@ -120,22 +120,28 @@
 
 ### Bảng Kết quả Thử nghiệm Chính thức Tập Test 30 câu
 
+Nhãn dưới đây là nhãn audit: từng câu trả lời được đối chiếu với nội dung chunk và gold (file `results/advanced/test_reviews.json`, mỗi câu có lý do). Script tự chấm ban đầu chỉ kiểm tra citation cùng số trang với gold nên báo 29/30; con số đó bị loại bỏ vì không kiểm tra nội dung câu trả lời.
+
 | Nhóm test | Đạt / tổng | Tỷ lệ | Lỗi / nhận xét |
 |---|:---:|:---:|---|
-| **Bảng (Tables)** | **6 / 6** | **100.0%** | Đọc chính xác 100% số liệu nợ của Table 1.1, Ấn Độ, Indonesia, Việt Nam, Ghana |
-| **Ảnh, sơ đồ** | **4 / 5** | **80.0%** | Nhận diện đúng sơ đồ phân loại thu nhập, cơ chế ERA Ukraine, bất ổn toàn cầu |
-| **Biểu đồ** | **5 / 5** | **100.0%** | Đọc chuẩn xác quỹ đạo nợ, điều kiện lãi suất, kiều hối vùng, tài sản quốc gia |
-| **Multi-hop** | **4 / 4** | **100.0%** | Kết hợp dữ kiện thành công giữa 2 quốc gia hoặc giữa bảng số liệu và văn bản |
-| **Text** | **4 / 4** | **100.0%** | Tổng hợp chính xác các nguyên nhân vĩ mô, rủi ro nợ ngoại tệ, giải pháp tài khóa |
-| **Thiếu bằng chứng** | **6 / 6** | **100.0%** | 100% từ chối đúng các câu hỏi ngoài phạm vi báo cáo, không bị ảo giác |
-| **TOÀN BỘ (OVERALL)** | **29 / 30** | **96.67%** |  **VƯỢT NGƯỠNG $\ge 90.0\%$** |
+| **Bảng (Tables)** | 3 / 6 | 50.0% | Đúng bảng quốc gia (Ấn Độ, Việt Nam, Ghana). Sai ở `mm_test_01` (nhầm mốc 8,9T là 2015), `mm_test_02` (dùng số nhóm IDA thay vì LMIC), `mm_test_04` (tỷ lệ 46,9% sai phép tính và khác mẫu số). Bảng Table 1.1 không được retrieve đúng. |
+| **Ảnh, sơ đồ** | 3 / 5 | 60.0% | Sai ở `mm_test_09` (thiếu cơ chế ERA, nằm ở trang kế tiếp) và `mm_test_11` (từ chối nhầm dù p77 có nội dung). |
+| **Biểu đồ** | 2 / 5 | 40.0% | Chỉ đọc được các biểu đồ có đoạn văn mô tả đi kèm. `mm_test_14` đoán không có căn cứ, `mm_test_12` bịa số 9,2T, `mm_test_16` trích sai chunk. |
+| **Multi-hop** | 2 / 4 | 50.0% | `mm_test_18` thiếu bước nhập khẩu lương thực; `mm_test_19` không nêu GFN và không trích p86. |
+| **Text** | 4 / 4 | 100.0% | Đúng cả 4 câu. |
+| **Thiếu bằng chứng** | 6 / 6 | 100.0% | Từ chối đúng cả 6; đã tìm từ khóa trong toàn bộ 270 chunk để xác nhận không có thông tin. |
+| **TOÀN BỘ (OVERALL)** | **20 / 30** | **66.67%** | **CHƯA ĐẠT ngưỡng 90% (cần ≥ 27/30), không nhận bonus nâng cao** |
+
+- **Nguyên nhân chính:** (1) pipeline chỉ index text trích từ PDF; chunk "chart" và "diagram" không chứa giá trị đọc từ hình, nên agent đoán hoặc lấy số từ đoạn văn lân cận; (2) retrieval không lấy được Table 1.1 và vài trang then chốt (p39, p77, p96); (3) hậu kiểm citation chỉ kiểm tra ID tồn tại.
+- **Lỗi benchmark phát hiện khi audit:** `mm_test_23` (gold nêu "spending efficiency" không có trong tài liệu), `mm_test_07` (gold nêu 4 nhóm thu nhập, hình chỉ có 3), `mm_test_15` (ghi Figure 2.12, hình thực tế là 2.11). Các câu này được chấm theo tài liệu gốc, gold không bị sửa sau khi xem kết quả test.
+- **Cách chấm:** nhãn được đối chiếu từng câu với text chunk và gold (không đối chiếu ảnh trang PDF).
 
 - **Trace, nhãn và evidence từng câu; thời gian, chi phí, lỗi hệ thống:**
   - File traces chi tiết: `results/advanced/test_traces.json`.
   - File reviews kiểm định từng câu: `results/advanced/test_reviews.json`.
   - File summary chính thức: `results/advanced/test_summary.json`.
-  - Thời gian trung bình: 6.8s/câu. Chi phí: ~$0.00018/câu. Số lỗi hệ thống / provider errors: **0**.
+  - Thời gian trung bình: 5.7s/câu. Chi phí: ~$0.00018/câu. Số lỗi hệ thống / provider errors: **0**.
 - **Giới hạn, cách tái lập và đường dẫn benchmark:**
   - Lệnh tái lập toàn bộ: `python3 scripts/run_advanced_pipeline.py --split test`.
   - Đường dẫn benchmark: `data/multimodal_questions.json`.
-  - Giới hạn: Một số biểu đồ dạng đồ thị đường không có nhãn số trực tiếp trong PDF vector cần kết hợp vision rendering để đọc giá trị điểm cực tiểu/cực đại.
+  - Giới hạn: Chưa lưu vùng trang (bbox) hoặc ảnh crop cho bảng, ảnh, biểu đồ; chưa dùng vision/OCR nên giá trị chỉ có trong hình không đọc được. Chưa có test mới độc lập nếu cải tiến pipeline sau khi đã xem kết quả test hiện tại.

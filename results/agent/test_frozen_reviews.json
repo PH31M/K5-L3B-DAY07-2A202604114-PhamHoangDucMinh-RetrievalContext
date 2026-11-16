@@ -5,7 +5,9 @@
       true
     ],
     "answer_grade": 2,
-    "notes": "Chính xác, đầy đủ bằng chứng và trích dẫn chuẩn xác."
+    "context_grade": 2,
+    "notes": "Khớp gold p77.",
+    "reviewer": "claude-audit (đối chiếu từng câu với chunk gốc)"
   },
   {
     "query_id": "test_02",
@@ -13,7 +15,9 @@
       true
     ],
     "answer_grade": 2,
-    "notes": "Chính xác, đầy đủ bằng chứng và trích dẫn chuẩn xác."
+    "context_grade": 2,
+    "notes": "Đúng ý gold p82. Lỗi trình bày nhỏ: câu trả lời có chuỗi \"[chunk-id]\" còn sót (không phải citation thật); thêm chữ \"loans\" khi chunk bị cắt ở \"nonperforming\".",
+    "reviewer": "claude-audit (đối chiếu từng câu với chunk gốc)"
   },
   {
     "query_id": "test_03",
@@ -21,7 +25,9 @@
       true
     ],
     "answer_grade": 2,
-    "notes": "Chính xác, đầy đủ bằng chứng và trích dẫn chuẩn xác."
+    "context_grade": 2,
+    "notes": "Khớp gold p86; số GFN bổ sung đúng theo chunk.",
+    "reviewer": "claude-audit (đối chiếu từng câu với chunk gốc)"
   },
   {
     "query_id": "test_04",
@@ -29,7 +35,9 @@
       true
     ],
     "answer_grade": 2,
-    "notes": "Chính xác, đầy đủ bằng chứng và trích dẫn chuẩn xác."
+    "context_grade": 2,
+    "notes": "3–4 năm, khớp p93.",
+    "reviewer": "claude-audit (đối chiếu từng câu với chunk gốc)"
   },
   {
     "query_id": "test_05",
@@ -38,36 +46,43 @@
       true
     ],
     "answer_grade": 2,
-    "notes": "Chính xác, đầy đủ bằng chứng và trích dẫn chuẩn xác."
+    "context_grade": 2,
+    "notes": "Khớp gold p95; citation p95_b001 hỗ trợ phần bổ sung về khung quản lý rủi ro tài khóa.",
+    "reviewer": "claude-audit (đối chiếu từng câu với chunk gốc)"
   },
   {
     "query_id": "test_06",
     "citation_support": [],
     "abstention_correct": true,
-    "notes": "Từ chối đúng do tài liệu không chứa bằng chứng."
+    "notes": "ĐÚNG (từ chối): chủ đề không có trong tài liệu (đã tìm từ khóa trong cả 108 chunk Chương 2 và 270 chunk toàn văn).",
+    "reviewer": "claude-audit (đối chiếu từng câu với chunk gốc)"
   },
   {
     "query_id": "test_07",
     "citation_support": [],
     "abstention_correct": true,
-    "notes": "Từ chối đúng do tài liệu không chứa bằng chứng."
+    "notes": "ĐÚNG (từ chối): chủ đề không có trong tài liệu (đã tìm từ khóa trong cả 108 chunk Chương 2 và 270 chunk toàn văn).",
+    "reviewer": "claude-audit (đối chiếu từng câu với chunk gốc)"
   },
   {
     "query_id": "test_08",
     "citation_support": [],
     "abstention_correct": true,
-    "notes": "Từ chối đúng do tài liệu không chứa bằng chứng."
+    "notes": "ĐÚNG (từ chối): chủ đề không có trong tài liệu (đã tìm từ khóa trong cả 108 chunk Chương 2 và 270 chunk toàn văn).",
+    "reviewer": "claude-audit (đối chiếu từng câu với chunk gốc)"
   },
   {
     "query_id": "test_09",
     "citation_support": [],
     "abstention_correct": true,
-    "notes": "Từ chối đúng do tài liệu không chứa bằng chứng."
+    "notes": "ĐÚNG (từ chối): chủ đề không có trong tài liệu (đã tìm từ khóa trong cả 108 chunk Chương 2 và 270 chunk toàn văn).",
+    "reviewer": "claude-audit (đối chiếu từng câu với chunk gốc)"
   },
   {
     "query_id": "test_10",
     "citation_support": [],
     "abstention_correct": true,
-    "notes": "Từ chối đúng do tài liệu không chứa bằng chứng."
+    "notes": "ĐÚNG (từ chối): chủ đề không có trong tài liệu (đã tìm từ khóa trong cả 108 chunk Chương 2 và 270 chunk toàn văn).",
+    "reviewer": "claude-audit (đối chiếu từng câu với chunk gốc)"
   }
 ]

@@ -8,11 +8,12 @@
       "text_p027_b000"
     ],
     "citation_support": [
-      true
+      false
     ],
-    "passed": true,
-    "answer_grade": 2,
-    "notes": "Đạt: Trả lời chính xác và trích dẫn đúng nguồn gốc."
+    "passed": false,
+    "notes": "SAI: chọn nhầm mốc. Trả lời \"8,9 nghìn tỷ USD năm 2015 → 9,4 nghìn tỷ 2025 (+0,5; 5,6%)\" nhưng 8,9T là số năm 2024 (chunk p27). Table 1.1 (p28) cho 5.915,7 → 9.445,0 tỷ USD (+3.529,3; ~59,7%). Không trích bảng p28.",
+    "reviewer": "claude-audit (đối chiếu từng câu với chunk gốc)",
+    "answer_grade": 1
   },
   {
     "query_id": "mm_test_02",
@@ -23,11 +24,12 @@
       "chart_p062"
     ],
     "citation_support": [
-      true
+      false
     ],
-    "passed": true,
-    "answer_grade": 2,
-    "notes": "Đạt: Trả lời chính xác và trích dẫn đúng nguồn gốc."
+    "passed": false,
+    "notes": "SAI: số 722,1 và 241,5 tỷ USD là của nhóm IDA-eligible (Fig 1.18, p62), không phải LMIC Table 1.1 (1.993,3 và 499,6 tỷ USD). Trả lời sai đối tượng, citation không hỗ trợ câu hỏi.",
+    "reviewer": "claude-audit (đối chiếu từng câu với chunk gốc)",
+    "answer_grade": 0
   },
   {
     "query_id": "mm_test_03",
@@ -41,8 +43,9 @@
       true
     ],
     "passed": true,
-    "answer_grade": 2,
-    "notes": "Đạt: Trả lời chính xác và trích dẫn đúng nguồn gốc."
+    "notes": "ĐÚNG: 763.516 / 275.560 / 337.184 / 150.772 triệu USD khớp bảng p195.",
+    "reviewer": "claude-audit (đối chiếu từng câu với chunk gốc)",
+    "answer_grade": 2
   },
   {
     "query_id": "mm_test_04",
@@ -55,9 +58,10 @@
     "citation_support": [
       true
     ],
-    "passed": true,
-    "answer_grade": 2,
-    "notes": "Đạt: Trả lời chính xác và trích dẫn đúng nguồn gốc."
+    "passed": false,
+    "notes": "Một phần: 438.091 và 205.939 đúng, nhưng tỷ lệ tính trên tổng nợ và ghi 46,9% (thực tế 205.939/438.091 = 47,0%); gold tính trên PPG (273.764) ≈ 75,2%. Sai phép tính và khác mẫu số.",
+    "reviewer": "claude-audit (đối chiếu từng câu với chunk gốc)",
+    "answer_grade": 1
   },
   {
     "query_id": "mm_test_05",
@@ -71,8 +75,9 @@
       true
     ],
     "passed": true,
-    "answer_grade": 2,
-    "notes": "Đạt: Trả lời chính xác và trích dẫn đúng nguồn gốc."
+    "notes": "ĐÚNG: 101,6 triệu dân; GNI 500.206; ADB 6.965 khớp bảng p260.",
+    "reviewer": "claude-audit (đối chiếu từng câu với chunk gốc)",
+    "answer_grade": 2
   },
   {
     "query_id": "mm_test_06",
@@ -86,8 +91,9 @@
       true
     ],
     "passed": true,
-    "answer_grade": 2,
-    "notes": "Đạt: Trả lời chính xác và trích dẫn đúng nguồn gốc."
+    "notes": "ĐÚNG: 38.837 và 6.966 (17,9%) khớp bảng p187.",
+    "reviewer": "claude-audit (đối chiếu từng câu với chunk gốc)",
+    "answer_grade": 2
   },
   {
     "query_id": "mm_test_07",
@@ -101,8 +107,9 @@
       true
     ],
     "passed": true,
-    "answer_grade": 2,
-    "notes": "Đạt: Trả lời chính xác và trích dẫn đúng nguồn gốc."
+    "notes": "ĐÚNG theo hình B1.3.1 (p37): 23 thu nhập thấp; 96 thu nhập trung bình = 30+47+19; 1 thu nhập cao (Guyana). Lưu ý: gold ghi 4 nhóm (low/lower-middle/upper-middle/high) không khớp hình; câu trả lời của agent chính xác hơn gold.",
+    "reviewer": "claude-audit (đối chiếu từng câu với chunk gốc)",
+    "answer_grade": 2
   },
   {
     "query_id": "mm_test_08",
@@ -116,8 +123,9 @@
       true
     ],
     "passed": true,
-    "answer_grade": 2,
-    "notes": "Đạt: Trả lời chính xác và trích dẫn đúng nguồn gốc."
+    "notes": "ĐÚNG: base 2000=100; nguồn WUI và GEPU, khớp chú thích Figure 2.1 (p76).",
+    "reviewer": "claude-audit (đối chiếu từng câu với chunk gốc)",
+    "answer_grade": 2
   },
   {
     "query_id": "mm_test_09",
@@ -130,9 +138,10 @@
     "citation_support": [
       true
     ],
-    "passed": true,
-    "answer_grade": 2,
-    "notes": "Đạt: Trả lời chính xác và trích dẫn đúng nguồn gốc."
+    "passed": false,
+    "notes": "Chưa đủ: chỉ nêu ERA là sáng kiến cho vay ~50 tỷ USD (đúng theo chunk p38) nhưng không nêu cơ chế dùng lợi nhuận bất ngờ từ tài sản Nga bị đóng băng để trả nợ. Phần này nằm ở trang tiếp theo (p39), retrieval không lấy được, câu hỏi hỏi về cơ chế nên không đạt.",
+    "reviewer": "claude-audit (đối chiếu từng câu với chunk gốc)",
+    "answer_grade": 1
   },
   {
     "query_id": "mm_test_10",
@@ -146,8 +155,9 @@
       true
     ],
     "passed": true,
-    "answer_grade": 2,
-    "notes": "Đạt: Trả lời chính xác và trích dẫn đúng nguồn gốc."
+    "notes": "ĐÚNG: 3–4 năm; text p93 trích Figure B2.3.2 và nêu rõ khoảng chờ này. Citation là text p93 chứ không phải chunk hình p94 nhưng đủ chứng minh.",
+    "reviewer": "claude-audit (đối chiếu từng câu với chunk gốc)",
+    "answer_grade": 2
   },
   {
     "query_id": "mm_test_11",
@@ -157,8 +167,9 @@
     "citations": [],
     "citation_support": [],
     "passed": false,
-    "answer_grade": 0,
-    "notes": "Không đạt: Thiếu bằng chứng hoặc trích dẫn sai."
+    "notes": "SAI (từ chối nhầm): tài liệu có nêu ở p77 (chunk chart_p077): tỷ giá thả nổi hấp thụ một phần cú sốc qua biến động tiền tệ, tỷ giá cố định dùng dự trữ ngoại hối để đệm. Retrieval không lấy được chunk này.",
+    "reviewer": "claude-audit (đối chiếu từng câu với chunk gốc)",
+    "answer_grade": 0
   },
   {
     "query_id": "mm_test_12",
@@ -169,11 +180,12 @@
       "chart_p030"
     ],
     "citation_support": [
-      true
+      false
     ],
-    "passed": true,
-    "answer_grade": 2,
-    "notes": "Đạt: Trả lời chính xác và trích dẫn đúng nguồn gốc."
+    "passed": false,
+    "notes": "SAI số liệu: ghi \"kỷ lục 9,2 nghìn tỷ USD\"; số đúng là 9,4 nghìn tỷ (p27/Table 1.1). Chunk chart_p030 được trích không chứa 9,2 nghìn tỷ. Hình 1.1 không được đọc, chỉ có đoạn văn lân cận.",
+    "reviewer": "claude-audit (đối chiếu từng câu với chunk gốc)",
+    "answer_grade": 1
   },
   {
     "query_id": "mm_test_13",
@@ -187,8 +199,9 @@
       true
     ],
     "passed": true,
-    "answer_grade": 2,
-    "notes": "Đạt: Trả lời chính xác và trích dẫn đúng nguồn gốc."
+    "notes": "ĐÚNG: lãi suất tư nhân 5,7% so với chính thức 3,0% (p50). Gộp \"official\" với \"multilateral\" nhưng không sai ý.",
+    "reviewer": "claude-audit (đối chiếu từng câu với chunk gốc)",
+    "answer_grade": 2
   },
   {
     "query_id": "mm_test_14",
@@ -199,11 +212,12 @@
       "chart_p058"
     ],
     "citation_support": [
-      true
+      false
     ],
-    "passed": true,
-    "answer_grade": 2,
-    "notes": "Đạt: Trả lời chính xác và trích dẫn đúng nguồn gốc."
+    "passed": false,
+    "notes": "SAI/ẢO GIÁC: trả lời Sub-Saharan Africa. Chunk chart_p058 chỉ có tên các vùng trong chú giải, không có số liệu. Gold là South Asia. Agent đoán không có căn cứ.",
+    "reviewer": "claude-audit (đối chiếu từng câu với chunk gốc)",
+    "answer_grade": 0
   },
   {
     "query_id": "mm_test_15",
@@ -217,8 +231,9 @@
       true
     ],
     "passed": true,
-    "answer_grade": 2,
-    "notes": "Đạt: Trả lời chính xác và trích dẫn đúng nguồn gốc."
+    "notes": "ĐÚNG: ngân hàng nội địa IDA luôn giữ tỷ trọng tài sản chính phủ cao hơn IBRD (p90). Lưu ý: câu hỏi ghi Figure 2.12 nhưng hình trong chunk là Figure 2.11 (lỗi nhãn của benchmark).",
+    "reviewer": "claude-audit (đối chiếu từng câu với chunk gốc)",
+    "answer_grade": 2
   },
   {
     "query_id": "mm_test_16",
@@ -229,11 +244,12 @@
       "chart_p097"
     ],
     "citation_support": [
-      true
+      false
     ],
-    "passed": true,
-    "answer_grade": 2,
-    "notes": "Đạt: Trả lời chính xác và trích dẫn đúng nguồn gốc."
+    "passed": false,
+    "notes": "Citation sai: kết luận (tỷ trọng nhập khẩu lương thực giảm khi thu nhập tăng) đúng và có ở chunk chart_p096, nhưng agent trích chart_p097 chỉ chứa trục và chú thích hình, không hỗ trợ kết luận.",
+    "reviewer": "claude-audit (đối chiếu từng câu với chunk gốc)",
+    "answer_grade": 1
   },
   {
     "query_id": "mm_test_17",
@@ -249,8 +265,9 @@
       true
     ],
     "passed": true,
-    "answer_grade": 2,
-    "notes": "Đạt: Trả lời chính xác và trích dẫn đúng nguồn gốc."
+    "notes": "ĐÚNG: 763.516 − 438.091 = 325.425; ngắn hạn Ấn Độ 150.772 > Indonesia 61.595.",
+    "reviewer": "claude-audit (đối chiếu từng câu với chunk gốc)",
+    "answer_grade": 2
   },
   {
     "query_id": "mm_test_18",
@@ -265,9 +282,10 @@
       true,
       true
     ],
-    "passed": true,
-    "answer_grade": 2,
-    "notes": "Đạt: Trả lời chính xác và trích dẫn đúng nguồn gốc."
+    "passed": false,
+    "notes": "Thiếu một bước: chỉ trình bày cú sốc năng lượng 2026 (lạm phát 2,6→3,6%; nhập khẩu +23%; deprec. 1,7%) từ p80–p81, không đề cập phụ thuộc nhập khẩu lương thực (p96) như câu hỏi multi-hop yêu cầu.",
+    "reviewer": "claude-audit (đối chiếu từng câu với chunk gốc)",
+    "answer_grade": 1
   },
   {
     "query_id": "mm_test_19",
@@ -280,9 +298,10 @@
     "citation_support": [
       true
     ],
-    "passed": true,
-    "answer_grade": 2,
-    "notes": "Đạt: Trả lời chính xác và trích dẫn đúng nguồn gốc."
+    "passed": false,
+    "notes": "Chưa đủ cho multi-hop (borderline): nêu đúng mối liên hệ gánh nặng nợ nội địa ~30% doanh thu với GFN (p85) nhưng không đưa GFN 8,2%/8,7% và không trích p86 như yêu cầu hai trang.",
+    "reviewer": "claude-audit (đối chiếu từng câu với chunk gốc)",
+    "answer_grade": 1
   },
   {
     "query_id": "mm_test_20",
@@ -298,8 +317,9 @@
       true
     ],
     "passed": true,
-    "answer_grade": 2,
-    "notes": "Đạt: Trả lời chính xác và trích dẫn đúng nguồn gốc."
+    "notes": "ĐÚNG: Việt Nam −0,9%, 101,6 triệu; Ghana +7,6%, 35,1 triệu.",
+    "reviewer": "claude-audit (đối chiếu từng câu với chunk gốc)",
+    "answer_grade": 2
   },
   {
     "query_id": "mm_test_21",
@@ -313,8 +333,9 @@
       true
     ],
     "passed": true,
-    "answer_grade": 2,
-    "notes": "Đạt: Trả lời chính xác và trích dẫn đúng nguồn gốc."
+    "notes": "ĐÚNG: cú sốc khó hấp thụ khi chính phủ đã có nhu cầu tài chính lớn và dư địa phản ứng hạn chế (p75).",
+    "reviewer": "claude-audit (đối chiếu từng câu với chunk gốc)",
+    "answer_grade": 2
   },
   {
     "query_id": "mm_test_22",
@@ -328,8 +349,9 @@
       true
     ],
     "passed": true,
-    "answer_grade": 2,
-    "notes": "Đạt: Trả lời chính xác và trích dẫn đúng nguồn gốc."
+    "notes": "ĐÚNG: khớp văn bản p78 (mất giá tiền tệ → gánh nặng nợ, lạm phát, đầu tư chậm, tiết kiệm giảm).",
+    "reviewer": "claude-audit (đối chiếu từng câu với chunk gốc)",
+    "answer_grade": 2
   },
   {
     "query_id": "mm_test_23",
@@ -343,8 +365,9 @@
       true
     ],
     "passed": true,
-    "answer_grade": 2,
-    "notes": "Đạt: Trả lời chính xác và trích dẫn đúng nguồn gốc."
+    "notes": "ĐÚNG theo tài liệu (p92): ba ưu tiên là huy động doanh thu kèm quản lý nợ vững, chính sách tài khóa ngược chu kỳ, đầu tư vào thể chế tài khóa. Gold của benchmark (\"spending efficiency\") không có trong tài liệu: lỗi gold, không phải lỗi agent.",
+    "reviewer": "claude-audit (đối chiếu từng câu với chunk gốc)",
+    "answer_grade": 2
   },
   {
     "query_id": "mm_test_24",
@@ -358,8 +381,9 @@
       true
     ],
     "passed": true,
-    "answer_grade": 2,
-    "notes": "Đạt: Trả lời chính xác và trích dẫn đúng nguồn gốc."
+    "notes": "ĐÚNG: khớp p95 (quỹ dự phòng, quỹ thiên tai, công cụ nợ có điều kiện/bảo hiểm).",
+    "reviewer": "claude-audit (đối chiếu từng câu với chunk gốc)",
+    "answer_grade": 2
   },
   {
     "query_id": "mm_test_25",
@@ -369,8 +393,9 @@
     "citations": [],
     "citation_support": [],
     "passed": true,
-    "abstention_correct": true,
-    "notes": "Đạt: Từ chối chính xác câu thiếu dữ kiện."
+    "notes": "ĐÚNG (từ chối): chủ đề không có trong tài liệu; đã tìm từ khóa trong toàn bộ 270 chunk (Norway, solar, real estate default, swap Argentina–Brazil, yield 10 năm ngày 28/2/2026, tài sản crypto của quỹ Ghana) và không thấy.",
+    "reviewer": "claude-audit (đối chiếu từng câu với chunk gốc)",
+    "abstention_correct": true
   },
   {
     "query_id": "mm_test_26",
@@ -380,8 +405,9 @@
     "citations": [],
     "citation_support": [],
     "passed": true,
-    "abstention_correct": true,
-    "notes": "Đạt: Từ chối chính xác câu thiếu dữ kiện."
+    "notes": "ĐÚNG (từ chối): chủ đề không có trong tài liệu; đã tìm từ khóa trong toàn bộ 270 chunk (Norway, solar, real estate default, swap Argentina–Brazil, yield 10 năm ngày 28/2/2026, tài sản crypto của quỹ Ghana) và không thấy.",
+    "reviewer": "claude-audit (đối chiếu từng câu với chunk gốc)",
+    "abstention_correct": true
   },
   {
     "query_id": "mm_test_27",
@@ -391,8 +417,9 @@
     "citations": [],
     "citation_support": [],
     "passed": true,
-    "abstention_correct": true,
-    "notes": "Đạt: Từ chối chính xác câu thiếu dữ kiện."
+    "notes": "ĐÚNG (từ chối): chủ đề không có trong tài liệu; đã tìm từ khóa trong toàn bộ 270 chunk (Norway, solar, real estate default, swap Argentina–Brazil, yield 10 năm ngày 28/2/2026, tài sản crypto của quỹ Ghana) và không thấy.",
+    "reviewer": "claude-audit (đối chiếu từng câu với chunk gốc)",
+    "abstention_correct": true
   },
   {
     "query_id": "mm_test_28",
@@ -402,8 +429,9 @@
     "citations": [],
     "citation_support": [],
     "passed": true,
-    "abstention_correct": true,
-    "notes": "Đạt: Từ chối chính xác câu thiếu dữ kiện."
+    "notes": "ĐÚNG (từ chối): chủ đề không có trong tài liệu; đã tìm từ khóa trong toàn bộ 270 chunk (Norway, solar, real estate default, swap Argentina–Brazil, yield 10 năm ngày 28/2/2026, tài sản crypto của quỹ Ghana) và không thấy.",
+    "reviewer": "claude-audit (đối chiếu từng câu với chunk gốc)",
+    "abstention_correct": true
   },
   {
     "query_id": "mm_test_29",
@@ -413,8 +441,9 @@
     "citations": [],
     "citation_support": [],
     "passed": true,
-    "abstention_correct": true,
-    "notes": "Đạt: Từ chối chính xác câu thiếu dữ kiện."
+    "notes": "ĐÚNG (từ chối): chủ đề không có trong tài liệu; đã tìm từ khóa trong toàn bộ 270 chunk (Norway, solar, real estate default, swap Argentina–Brazil, yield 10 năm ngày 28/2/2026, tài sản crypto của quỹ Ghana) và không thấy.",
+    "reviewer": "claude-audit (đối chiếu từng câu với chunk gốc)",
+    "abstention_correct": true
   },
   {
     "query_id": "mm_test_30",
@@ -424,7 +453,8 @@
     "citations": [],
     "citation_support": [],
     "passed": true,
-    "abstention_correct": true,
-    "notes": "Đạt: Từ chối chính xác câu thiếu dữ kiện."
+    "notes": "ĐÚNG (từ chối): chủ đề không có trong tài liệu; đã tìm từ khóa trong toàn bộ 270 chunk (Norway, solar, real estate default, swap Argentina–Brazil, yield 10 năm ngày 28/2/2026, tài sản crypto của quỹ Ghana) và không thấy.",
+    "reviewer": "claude-audit (đối chiếu từng câu với chunk gốc)",
+    "abstention_correct": true
   }
 ]

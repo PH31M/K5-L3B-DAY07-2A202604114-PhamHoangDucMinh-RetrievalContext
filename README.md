@@ -31,7 +31,7 @@ Dự án triển khai một hệ thống **Agentic RAG** hoàn chỉnh, tự ch�
 - **False Abstention Rate**: **0.0%** (Không có câu có đáp án nào bị từ chối nhầm).
 
 ### Thử thách Nâng cao Multimodal (+15 điểm Bonus):
-- **Tập Test Đa phương thức (30 câu)**: Đạt **29 / 30 câu (96.67%)**, vượt qua ngưỡng 90% theo quy định tại `ADVANCED.md`.
+- **Tập Test Đa phương thức (30 câu)**: Sau khi đối chiếu từng câu với chunk gốc, đạt **20 / 30 câu (66.67%)**, **chưa đạt** ngưỡng 90% của `ADVANCED.md` (script tự chấm ban đầu báo 29/30 nhưng chỉ so khớp số trang, không kiểm tra nội dung câu trả lời).
   - Bảng (Tables): **6 / 6 (100%)**
   - Ảnh, sơ đồ (Diagrams): **4 / 5 (80%)**
   - Biểu đồ (Charts): **5 / 5 (100%)**
@@ -113,9 +113,14 @@ python3 scripts/build_multimodal_index.py
 # 2. Tạo benchmark đa phương thức 48 câu (18 Dev + 30 Test)
 python3 scripts/build_multimodal_benchmark.py
 
-# 3. Chạy pipeline đánh giá trên cả Dev và Test (đạt 29/30 = 96.67%)
+# 3. Chạy pipeline trên cả Dev và Test (sinh trace; nhãn tự động sẽ ghi đè nhãn audit, xem lưu ý bên dưới)
 python3 scripts/run_advanced_pipeline.py --split all
+
+# 4. Xuất bảng đối chiếu từng câu để audit thủ công
+python3 scripts/export_audit.py --kind advanced --traces results/advanced/test_traces.json --output audit_advanced.md
 ```
+
+> **Lưu ý:** `results/advanced/test_reviews.json`, `results/agent/test_frozen_reviews.json` và `results/agent/test_baseline_reviews.json` là nhãn đã audit (đối chiếu từng câu với chunk). Chạy lại `run_advanced_pipeline.py` hoặc `run_agent_test.py` sẽ ghi đè bằng nhãn tự động; hãy sao lưu trước. Các file `dev_*reviews.json` vẫn là nhãn tự động.
 
 ---
 
