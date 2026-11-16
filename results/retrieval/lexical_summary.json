@@ -1,0 +1,14 @@
+{
+  "strategy": "Lexical (BM25)",
+  "n": 15,
+  "hit1_count": 13,
+  "hit1_rate": 86.67,
+  "hit3_count": 15,
+  "hit3_rate": 100.0,
+  "context_hit_count": 13,
+  "context_hit_rate": 86.67,
+  "avg_context_chars": 819.9,
+  "median_ms": 0.217,
+  "avg_ms": 0.233,
+  "total_cost_usd": 0.0
+}

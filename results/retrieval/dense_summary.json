@@ -1,0 +1,14 @@
+{
+  "strategy": "Dense (Embedding 3 Small)",
+  "n": 15,
+  "hit1_count": 12,
+  "hit1_rate": 80.0,
+  "hit3_count": 15,
+  "hit3_rate": 100.0,
+  "context_hit_count": 12,
+  "context_hit_rate": 80.0,
+  "avg_context_chars": 813,
+  "median_ms": 1072.117,
+  "avg_ms": 1208.624,
+  "total_cost_usd": 3e-06
+}
