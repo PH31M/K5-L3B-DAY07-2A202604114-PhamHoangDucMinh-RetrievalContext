@@ -1,0 +1,1163 @@
+[
+  {
+    "query_id": "test_01",
+    "split": "test",
+    "question": "What external disruptions make economies that rely heavily on imports of goods and services especially vulnerable?",
+    "answerable": true,
+    "status": "answered",
+    "answer": "Economies that rely heavily on imports of goods and services are especially vulnerable to external disruptions such as production shortfalls in major supplier countries, export restrictions, or supply chain disruptions. These factors can lead to sudden changes in the external environment that significantly impact domestic activity in these economies [bookdata_01_p77_b000].",
+    "citations": [
+      "bookdata_01_p77_b000"
+    ],
+    "events": [
+      {
+        "event": "search",
+        "query": "external disruptions economies imports vulnerability",
+        "filter": {
+          "section": "transmission_shocks"
+        },
+        "results": [
+          {
+            "id": "bookdata_01_p76_b001",
+            "source_id": "bookdata_01",
+            "source": "World Bank International Debt Report 2026",
+            "page": 76,
+            "text": "Elevated uncertainty matters because economies remain closely connected to international markets. Yet countries differ in the nature and degree of their external exposure, which shapes how global external shocks affect them. Trade provides an important example. As figure 2.2 shows, global imports and exports of goods and services increased from below 25 percent of gross domestic product (GDP) in the early 2000s, were halted by the 2008 global financial crisis, and subsequently rebounded and have fluctuated around 30 percent. Exposure, however, varies significantly across income groups. In 2025, imports accounted for about 34 percent of GDP in low-income economies, compared with exports of about 24 percent; trade flows were much more balanced in high-income economies.",
+            "metadata": {
+              "section": "transmission_shocks",
+              "year": 2026,
+              "chapter": 2,
+              "char_count": 777,
+              "is_empty": false,
+              "chunk_index": 1,
+              "strategy": "by_paragraph"
+            },
+            "score": 0.032018,
+            "strategy": "hybrid_rrf",
+            "dense_rank": 1,
+            "lexical_rank": 4
+          },
+          {
+            "id": "bookdata_01_p77_b000",
+            "source_id": "bookdata_01",
+            "source": "World Bank International Debt Report 2026",
+            "page": 77,
+            "text": "2. DEBT DyNAmIcs: POLIcy ImPLIcATIONs 53 Transmission of External Shocks External shocks are transmitted to LMICs differently, depending on their structural features. Economies that rely heavily on imports of goods and services for domestic activity are vulnerable to sudden changes in the external environment, such as production shortfalls in major supplier countries, export restrictions, or supply chain disruptions; in contrast, export-oriented economies are more vulnerable to shifts in demand among their trading partners. External shocks also tend to spill more forcefully into LMICs with open financial markets, partly reflecting rapid capital flow movements. In addition, the types of policy frameworks in LMICs are important for the transmission of external shocks. For",
+            "metadata": {
+              "section": "transmission_shocks",
+              "year": 2026,
+              "chapter": 2,
+              "char_count": 780,
+              "is_empty": false,
+              "chunk_index": 0,
+              "strategy": "by_paragraph"
+            },
+            "score": 0.032018,
+            "strategy": "hybrid_rrf",
+            "dense_rank": 4,
+            "lexical_rank": 1
+          },
+          {
+            "id": "bookdata_01_p79_b002",
+            "source_id": "bookdata_01",
+            "source": "World Bank International Debt Report 2026",
+            "page": 79,
+            "text": "exporters tend to be affected more by adverse global demand shocks, including slowdowns in global activity triggered by major systemic events such as financial crises and pandemic-driven lockdowns, and the resulting plunges in commodity prices. In commodity-importing LMICs, external shocks can be transmitted through multiple channels. Higher global energy and food prices, along with disruptions to shipping and global value chains, raise production and transportation costs. The resulting rise in domestic inflation in these economies drives up the cost of living, with disproportionate effects on poorer economies and households, where food accounts for a larger share of consumption. The purchasing power of consumers declines as real incomes",
+            "metadata": {
+              "section": "transmission_shocks",
+              "year": 2026,
+              "chapter": 2,
+              "char_count": 747,
+              "is_empty": false,
+              "chunk_index": 2,
+              "strategy": "by_paragraph"
+            },
+            "score": 0.032002,
+            "strategy": "hybrid_rrf",
+            "dense_rank": 3,
+            "lexical_rank": 2
+          }
+        ],
+        "context": "[bookdata_01_p76_b001 | World Bank International Debt Report 2026 | page 76]\nElevated uncertainty matters because economies remain closely connected to international markets. Yet countries differ in the nature and degree of their external exposure, which shapes how global external shocks affect them. Trade provides an important example. As figure 2.2 shows, global imports and exports of goods and services increased from below 25 percent of gross domestic product (GDP) in the early 2000s, were halted by the 2008 global financial crisis, and subsequently rebounded and have fluctuated around 30 percent. Exposure, however, varies significantly across income groups. In 2025, imports accounted for about 34 percent of GDP in low-income economies, compared with exports of about 24 percent; trade flows were much more balanced in high-income economies.\n\n[bookdata_01_p77_b000 | World Bank International Debt Report 2026 | page 77]\n2. DEBT DyNAmIcs: POLIcy ImPLIcATIONs 53 Transmission of External Shocks External shocks are transmitted to LMICs differently, depending on their structural features. Economies that rely heavily on imports of goods and services for domestic activity are vulnerable to sudden changes in the external environment, such as production shortfalls in major supplier countries, export restrictions, or supply chain disruptions; in contrast, export-oriented economies are more vulnerable to shifts in demand among their trading partners. External shocks also tend to spill more forcefully into LMICs with open financial markets, partly reflecting rapid capital flow movements. In addition, the types of policy frameworks in LMICs are important for the transmission of external shocks. For",
+        "context_ids": [
+          "bookdata_01_p76_b001",
+          "bookdata_01_p77_b000"
+        ]
+      },
+      {
+        "event": "answer"
+      }
+    ],
+    "elapsed_ms": 19129.436458999407,
+    "gold": [
+      {
+        "source_id": "bookdata_01",
+        "page": 77,
+        "evidence": "Economies that rely heavily on imports of goods and services for domestic activity are vulnerable to sudden changes in the external environment, such as production shortfalls in major supplier countries, export restrictions, or supply chain disruptions"
+      }
+    ],
+    "expected_answer": "Production shortfalls in major supplier countries, export restrictions, or supply chain disruptions."
+  },
+  {
+    "query_id": "test_02",
+    "split": "test",
+    "question": "How do drops in global commodity prices adversely affect commodity-exporting LMICs?",
+    "answerable": true,
+    "status": "answered",
+    "answer": "Drops in global commodity prices adversely affect commodity-exporting LMICs by directly reducing export earnings and profits in the commodity-related sector, which in turn reduces domestic demand and economic activity. This decline in revenue leads to a deterioration of fiscal positions and the debt service mechanism, worsening terms of trade and current account balances. Additionally, reduced debt repayment capacity increases sovereign risk premiums, raises debt refinancing costs, erodes investor confidence, and can trigger sudden capital outflows. Financial conditions tighten, resulting in lower credit availability and a weakened banking sector, along with a rise in nonperforming loans [chunk-id] [bookdata_01_p82_b000].",
+    "citations": [
+      "bookdata_01_p82_b000"
+    ],
+    "events": [
+      {
+        "event": "search",
+        "query": "drops in global commodity prices commodity-exporting LMICs effects",
+        "filter": {
+          "section": "transmission_shocks"
+        },
+        "results": [
+          {
+            "id": "bookdata_01_p79_b002",
+            "source_id": "bookdata_01",
+            "source": "World Bank International Debt Report 2026",
+            "page": 79,
+            "text": "exporters tend to be affected more by adverse global demand shocks, including slowdowns in global activity triggered by major systemic events such as financial crises and pandemic-driven lockdowns, and the resulting plunges in commodity prices. In commodity-importing LMICs, external shocks can be transmitted through multiple channels. Higher global energy and food prices, along with disruptions to shipping and global value chains, raise production and transportation costs. The resulting rise in domestic inflation in these economies drives up the cost of living, with disproportionate effects on poorer economies and households, where food accounts for a larger share of consumption. The purchasing power of consumers declines as real incomes",
+            "metadata": {
+              "section": "transmission_shocks",
+              "year": 2026,
+              "chapter": 2,
+              "char_count": 747,
+              "is_empty": false,
+              "chunk_index": 2,
+              "strategy": "by_paragraph"
+            },
+            "score": 0.032787,
+            "strategy": "hybrid_rrf",
+            "dense_rank": 1,
+            "lexical_rank": 1
+          },
+          {
+            "id": "bookdata_01_p82_b000",
+            "source_id": "bookdata_01",
+            "source": "World Bank International Debt Report 2026",
+            "page": 82,
+            "text": "INTERNATIONAL DEBT REPORT 2026 58 Global demand shocks affect commodity-exporting LMICs directly and indirectly. Collapses in global commodity prices directly reduce export earnings and profits in the commodity-related sector, reducing domestic demand and activity. Revenue declines cause deterioration of fiscal positions and the debt service mechanism, while also leading to worsening terms of trade and current account balances. With reduced debt repayment capacity, sovereign risk premiums increase, raising debt refinancing costs, eroding investor confidence, and potentially triggering sudden capital outflows. Financial conditions are tightened, with lower credit availability and a weakened banking sector, along with a rise in nonperforming",
+            "metadata": {
+              "section": "transmission_shocks",
+              "year": 2026,
+              "chapter": 2,
+              "char_count": 749,
+              "is_empty": false,
+              "chunk_index": 0,
+              "strategy": "by_paragraph"
+            },
+            "score": 0.031498,
+            "strategy": "hybrid_rrf",
+            "dense_rank": 4,
+            "lexical_rank": 3
+          },
+          {
+            "id": "bookdata_01_p81_b001",
+            "source_id": "bookdata_01",
+            "source": "World Bank International Debt Report 2026",
+            "page": 81,
+            "text": "LMICs with flexible or adjustable exchange rate regimes, currencies depreciated by about 1.7 percent between January and July 2026 (figure 2.5), on average. In contrast, currencies in commodity-exporting LMICs with flexible regimes appreciated by an average of 2.5 percent over the same period. Currency pressures have made imports more expensive in commodity importers and worsened trade balances. Across commodity-importing LMICs with flexible or adjustable currency regimes, merchandise import values, in US dollar terms, increased by an average 23 percent between February and June 2026 compared with the same months of 2025. Excluding China, the rate of increase was 21 percent, on average. As import values increased faster than those of exports,",
+            "metadata": {
+              "section": "transmission_shocks",
+              "year": 2026,
+              "chapter": 2,
+              "char_count": 752,
+              "is_empty": false,
+              "chunk_index": 1,
+              "strategy": "by_paragraph"
+            },
+            "score": 0.031258,
+            "strategy": "hybrid_rrf",
+            "dense_rank": 3,
+            "lexical_rank": 5
+          }
+        ],
+        "context": "[bookdata_01_p79_b002 | World Bank International Debt Report 2026 | page 79]\nexporters tend to be affected more by adverse global demand shocks, including slowdowns in global activity triggered by major systemic events such as financial crises and pandemic-driven lockdowns, and the resulting plunges in commodity prices. In commodity-importing LMICs, external shocks can be transmitted through multiple channels. Higher global energy and food prices, along with disruptions to shipping and global value chains, raise production and transportation costs. The resulting rise in domestic inflation in these economies drives up the cost of living, with disproportionate effects on poorer economies and households, where food accounts for a larger share of consumption. The purchasing power of consumers declines as real incomes\n\n[bookdata_01_p82_b000 | World Bank International Debt Report 2026 | page 82]\nINTERNATIONAL DEBT REPORT 2026 58 Global demand shocks affect commodity-exporting LMICs directly and indirectly. Collapses in global commodity prices directly reduce export earnings and profits in the commodity-related sector, reducing domestic demand and activity. Revenue declines cause deterioration of fiscal positions and the debt service mechanism, while also leading to worsening terms of trade and current account balances. With reduced debt repayment capacity, sovereign risk premiums increase, raising debt refinancing costs, eroding investor confidence, and potentially triggering sudden capital outflows. Financial conditions are tightened, with lower credit availability and a weakened banking sector, along with a rise in nonperforming",
+        "context_ids": [
+          "bookdata_01_p79_b002",
+          "bookdata_01_p82_b000"
+        ]
+      },
+      {
+        "event": "answer"
+      }
+    ],
+    "elapsed_ms": 11692.188584000178,
+    "gold": [
+      {
+        "source_id": "bookdata_01",
+        "page": 82,
+        "evidence": "Collapses in global commodity prices directly reduce export earnings and profits in the commodity-related sector, reducing domestic demand and activity. Revenue declines cause deterioration of fiscal positions and the debt service mechanism, while also leading to worsening terms of trade and current account balances."
+      }
+    ],
+    "expected_answer": "They directly reduce export revenues and profits in commodity sectors, while indirectly deteriorating fiscal balances, terms of trade, and current account positions."
+  },
+  {
+    "query_id": "test_03",
+    "split": "test",
+    "question": "What global events after the pandemic shock contributed to elevated financing needs in IDA countries?",
+    "answerable": true,
+    "status": "answered",
+    "answer": "Global events after the pandemic shock that contributed to elevated financing needs in IDA countries include the commodity price and inflation surge following the Russian Federation’s invasion of Ukraine, as well as the sharp global monetary tightening that began in 2022. These factors led to an increase in gross financing needs (GFNs), which averaged about 10 percent of GDP during 2020–22 and remained above prepandemic levels thereafter, at approximately 8.2 percent of GDP in 2024 and 8.7 percent in 2025 [bookdata_01_p86_b000].",
+    "citations": [
+      "bookdata_01_p86_b000"
+    ],
+    "events": [
+      {
+        "event": "search",
+        "query": "global events after pandemic shock elevated financing needs IDA countries",
+        "filter": {
+          "section": "fiscal_pressures"
+        },
+        "results": [
+          {
+            "id": "bookdata_01_p86_b000",
+            "source_id": "bookdata_01",
+            "source": "World Bank International Debt Report 2026",
+            "page": 86,
+            "text": "INTERNATIONAL DEBT REPORT 2026 62 refinance maturing obligations contributes to elevated GFNs, even when fiscal deficits are narrowing. GFNs in IDA countries averaged about 6 percent of GDP during 2015–19, before increasing to roughly 10 percent during 2020–22 as pandemic-related primary deficits widened and debt service obligations increased. Subsequent shocks, including the commodity price and inflation surge following the Russian Federation’s invasion of Ukraine, and the sharp global monetary tightening that began in 2022, further contributed to elevated financing needs. GFNs subsequently moderated but remained well above their prepandemic average, at approximately 8.2 percent of GDP in 2024, before rising to 8.7 percent in 2025.",
+            "metadata": {
+              "section": "fiscal_pressures",
+              "year": 2026,
+              "chapter": 2,
+              "char_count": 742,
+              "is_empty": false,
+              "chunk_index": 0,
+              "strategy": "by_paragraph"
+            },
+            "score": 0.032522,
+            "strategy": "hybrid_rrf",
+            "dense_rank": 2,
+            "lexical_rank": 1
+          },
+          {
+            "id": "bookdata_01_p88_b001",
+            "source_id": "bookdata_01",
+            "source": "World Bank International Debt Report 2026",
+            "page": 88,
+            "text": "at low or moderate risk of overall sovereign stress,3 although vulnerabilities remain uneven, and debt levels are generally above prepandemic levels. Despite these improvements, IDA LIC-DSF countries have generally moved from high to moderate risk rather than returning to their preshock levels. Between 2019 and 2025, there were a total of 37 changes in external risk (figure 2.10). Of these changes, 22 were downgraded to higher risk of external debt distress, most of which took place after the COVID-19 shock. More recently, upgrades have reflected improved macro-fiscal conditions and, in a few cases, the completion of debt restructuring. The LIC-DSF framework underpinning these assessments has undergone a comprehensive review by the World Bank",
+            "metadata": {
+              "section": "fiscal_pressures",
+              "year": 2026,
+              "chapter": 2,
+              "char_count": 752,
+              "is_empty": false,
+              "chunk_index": 1,
+              "strategy": "by_paragraph"
+            },
+            "score": 0.031778,
+            "strategy": "hybrid_rrf",
+            "dense_rank": 1,
+            "lexical_rank": 5
+          },
+          {
+            "id": "bookdata_01_p85_b001",
+            "source_id": "bookdata_01",
+            "source": "World Bank International Debt Report 2026",
+            "page": 85,
+            "text": "These developments have contributed to a sustained increase in gross financing needs (GFNs) in IDA countries. Higher debt service burdens have important implications for fiscal space and refinancing needs. A larger share of government revenues must be allocated to interest payments, leaving fewer resources available for public investment and other policy priorities. At the same time, the need to Figure 2.8 Debt Service as Percentage of Government Revenues for IDA-Eligible Countries, 2000–25 Percent of revenues 0 10 20 30 40 50 20002001200220032004200520062007200820092010201120122013201420152016201720182019202020212022202320242025 Domestic debt service (average) External debt service (average) Sources: Original calculations based on the World Bank Group’s International Debt Statistics",
+            "metadata": {
+              "section": "fiscal_pressures",
+              "year": 2026,
+              "chapter": 2,
+              "char_count": 794,
+              "is_empty": false,
+              "chunk_index": 1,
+              "strategy": "by_paragraph"
+            },
+            "score": 0.031754,
+            "strategy": "hybrid_rrf",
+            "dense_rank": 4,
+            "lexical_rank": 2
+          }
+        ],
+        "context": "[bookdata_01_p86_b000 | World Bank International Debt Report 2026 | page 86]\nINTERNATIONAL DEBT REPORT 2026 62 refinance maturing obligations contributes to elevated GFNs, even when fiscal deficits are narrowing. GFNs in IDA countries averaged about 6 percent of GDP during 2015–19, before increasing to roughly 10 percent during 2020–22 as pandemic-related primary deficits widened and debt service obligations increased. Subsequent shocks, including the commodity price and inflation surge following the Russian Federation’s invasion of Ukraine, and the sharp global monetary tightening that began in 2022, further contributed to elevated financing needs. GFNs subsequently moderated but remained well above their prepandemic average, at approximately 8.2 percent of GDP in 2024, before rising to 8.7 percent in 2025.\n\n[bookdata_01_p88_b001 | World Bank International Debt Report 2026 | page 88]\nat low or moderate risk of overall sovereign stress,3 although vulnerabilities remain uneven, and debt levels are generally above prepandemic levels. Despite these improvements, IDA LIC-DSF countries have generally moved from high to moderate risk rather than returning to their preshock levels. Between 2019 and 2025, there were a total of 37 changes in external risk (figure 2.10). Of these changes, 22 were downgraded to higher risk of external debt distress, most of which took place after the COVID-19 shock. More recently, upgrades have reflected improved macro-fiscal conditions and, in a few cases, the completion of debt restructuring. The LIC-DSF framework underpinning these assessments has undergone a comprehensive review by the World Bank",
+        "context_ids": [
+          "bookdata_01_p86_b000",
+          "bookdata_01_p88_b001"
+        ]
+      },
+      {
+        "event": "answer"
+      }
+    ],
+    "elapsed_ms": 75271.80204199976,
+    "gold": [
+      {
+        "source_id": "bookdata_01",
+        "page": 86,
+        "evidence": "Subsequent shocks, including the commodity price and inflation surge following the Russian Federation’s invasion of Ukraine, and the sharp global monetary tightening that began in 2022, further contributed to elevated financing needs."
+      }
+    ],
+    "expected_answer": "The commodity price and inflation surge following the Russian invasion of Ukraine, and the sharp global monetary tightening beginning in 2022."
+  },
+  {
+    "query_id": "test_04",
+    "split": "test",
+    "question": "In the section on fiscal pressures and consolidation, how long did countries typically delay meaningful consolidation when facing primary deficits far above debt-stabilizing levels?",
+    "answerable": true,
+    "status": "answered",
+    "answer": "Countries typically delayed meaningful fiscal consolidation for three to four years when facing primary deficits significantly larger than what would stabilize debt [bookdata_01_p93_b001].",
+    "citations": [
+      "bookdata_01_p93_b001"
+    ],
+    "events": [
+      {
+        "event": "search",
+        "query": "fiscal pressures consolidation primary deficits delay",
+        "filter": {
+          "section": "fiscal_pressures"
+        },
+        "results": [
+          {
+            "id": "bookdata_01_p87_b000",
+            "source_id": "bookdata_01",
+            "source": "World Bank International Debt Report 2026",
+            "page": 87,
+            "text": "2. DEBT DyNAmIcs: POLIcy ImPLIcATIONs 63 The persistence of high GFNs, despite narrower primary deficits, underscores the role of accumulated debt and higher debt service costs. Notwithstanding notable fiscal consolidation, with primary deficits in 2023–24 narrowing to approximately half their 2021–22 levels, average GFNs stabilized at about 8 percent of GDP, 2 percentage points above their prepandemic average, before increasing further in 2025. Consistent with this pattern, the distribution of debt-stabilization gaps across countries has changed little over the past 15 years (figure 2.9). These gaps, denoted as ΔDSPD, are calculated as the difference between the actual primary deficit and the debt-stabilizing primary deficit,",
+            "metadata": {
+              "section": "fiscal_pressures",
+              "year": 2026,
+              "chapter": 2,
+              "char_count": 736,
+              "is_empty": false,
+              "chunk_index": 0,
+              "strategy": "by_paragraph"
+            },
+            "score": 0.032522,
+            "strategy": "hybrid_rrf",
+            "dense_rank": 2,
+            "lexical_rank": 1
+          },
+          {
+            "id": "bookdata_01_p93_b001",
+            "source_id": "bookdata_01",
+            "source": "World Bank International Debt Report 2026",
+            "page": 93,
+            "text": "which carries compounding costs. Where the primary deficit was significantly larger than what would stabilize debt, countries tended to wait three to four years before embarking on meaningful fiscal consolidation (figure B2.3.2; Di Lorenzo and Lacey 2024). Political and social constraints are particularly binding in the aftermath of a shock, but delay can compound the eventual costs. Where large sustainability gaps (that is, the primary deficit was significantly larger than what would stabilize debt) persisted for four years or more, the median debt ratio increased by 17 percentage points of gross domestic product. Growth also weakened: during periods of sustained fiscal unsustainability, average real gross domestic product per capita growth fell to the 32nd percentile of each country’s",
+            "metadata": {
+              "section": "fiscal_pressures",
+              "year": 2026,
+              "chapter": 2,
+              "char_count": 797,
+              "is_empty": false,
+              "chunk_index": 1,
+              "strategy": "by_paragraph"
+            },
+            "score": 0.032522,
+            "strategy": "hybrid_rrf",
+            "dense_rank": 1,
+            "lexical_rank": 2
+          },
+          {
+            "id": "bookdata_01_p94_b001",
+            "source_id": "bookdata_01",
+            "source": "World Bank International Debt Report 2026",
+            "page": 94,
+            "text": "Source: Di Lorenzo and Lacey 2024. Note: Unsustainable debt identified as a primary balance lying at least 2 percentage points of GDP below its debt-stabilizing level. Based on 389 consolidation cases. Box 2.3 External Shocks and Fiscal Consolidation (continued)",
+            "metadata": {
+              "section": "fiscal_pressures",
+              "year": 2026,
+              "chapter": 2,
+              "char_count": 262,
+              "is_empty": false,
+              "chunk_index": 1,
+              "strategy": "by_paragraph"
+            },
+            "score": 0.031258,
+            "strategy": "hybrid_rrf",
+            "dense_rank": 5,
+            "lexical_rank": 3
+          }
+        ],
+        "context": "[bookdata_01_p87_b000 | World Bank International Debt Report 2026 | page 87]\n2. DEBT DyNAmIcs: POLIcy ImPLIcATIONs 63 The persistence of high GFNs, despite narrower primary deficits, underscores the role of accumulated debt and higher debt service costs. Notwithstanding notable fiscal consolidation, with primary deficits in 2023–24 narrowing to approximately half their 2021–22 levels, average GFNs stabilized at about 8 percent of GDP, 2 percentage points above their prepandemic average, before increasing further in 2025. Consistent with this pattern, the distribution of debt-stabilization gaps across countries has changed little over the past 15 years (figure 2.9). These gaps, denoted as ΔDSPD, are calculated as the difference between the actual primary deficit and the debt-stabilizing primary deficit,\n\n[bookdata_01_p93_b001 | World Bank International Debt Report 2026 | page 93]\nwhich carries compounding costs. Where the primary deficit was significantly larger than what would stabilize debt, countries tended to wait three to four years before embarking on meaningful fiscal consolidation (figure B2.3.2; Di Lorenzo and Lacey 2024). Political and social constraints are particularly binding in the aftermath of a shock, but delay can compound the eventual costs. Where large sustainability gaps (that is, the primary deficit was significantly larger than what would stabilize debt) persisted for four years or more, the median debt ratio increased by 17 percentage points of gross domestic product. Growth also weakened: during periods of sustained fiscal unsustainability, average real gross domestic product per capita growth fell to the 32nd percentile of each country’s\n\n[bookdata_01_p94_b001 | World Bank International Debt Report 2026 | page 94]\nSource: Di Lorenzo and Lacey 2024. Note: Unsustainable debt identified as a primary balance lying at least 2 percentage points of GDP below its debt-stabilizing level. Based on 389 consolidation cases. Box 2.3 External Shocks and Fiscal Consolidation (continued)",
+        "context_ids": [
+          "bookdata_01_p87_b000",
+          "bookdata_01_p93_b001",
+          "bookdata_01_p94_b001"
+        ]
+      },
+      {
+        "event": "answer"
+      }
+    ],
+    "elapsed_ms": 14209.11949999936,
+    "gold": [
+      {
+        "source_id": "bookdata_01",
+        "page": 93,
+        "evidence": "Where the primary deficit was significantly larger than what would stabilize debt, countries tended to wait three to four years before embarking on meaningful fiscal consolidation"
+      }
+    ],
+    "expected_answer": "Countries typically waited three to four years before embarking on meaningful fiscal consolidation."
+  },
+  {
+    "query_id": "test_05",
+    "split": "test",
+    "question": "What specific reserve mechanisms and financial instruments can governments put in place in advance to mitigate immediate post-disaster fiscal impacts?",
+    "answerable": true,
+    "status": "answered",
+    "answer": "Governments can mitigate immediate post-disaster fiscal impacts by establishing contingency reserves within the annual budget, creating natural disaster funds with clear usage rules, and utilizing state-contingent debt instruments and insurance mechanisms that transfer disaster risk to third parties [bookdata_01_p95_b000]. Additionally, integrating these instruments into broader fiscal risk and debt management frameworks and identifying contingent liabilities can further enhance preparedness [bookdata_01_p95_b001].",
+    "citations": [
+      "bookdata_01_p95_b000",
+      "bookdata_01_p95_b001"
+    ],
+    "events": [
+      {
+        "event": "search",
+        "query": "reserve mechanisms financial instruments governments mitigate post-disaster fiscal impacts",
+        "filter": {
+          "section": "fiscal_pressures"
+        },
+        "results": [
+          {
+            "id": "bookdata_01_p95_b000",
+            "source_id": "bookdata_01",
+            "source": "World Bank International Debt Report 2026",
+            "page": 95,
+            "text": "2. DEBT DyNAmIcs: POLIcy ImPLIcATIONs 71 Establishing credible fiscal institutions and fiscal buffers. When a shock hits, the fiscal impact can be immediate and large, as spending needed to protect vulnerable communities rises while revenues fall. Governments can prepare for this tendency by establishing contingency reserves within the annual budget, natural disaster funds with clear rules governing their use and size calibrated to historical experience, and state-contingent debt instruments and other insurance mechanisms that transfer a portion of disaster risk to third parties (Polacek 2018). Well-designed fiscal rules can reinforce these buffers while allowing temporary, transparent flexibility during severe shocks.",
+            "metadata": {
+              "section": "fiscal_pressures",
+              "year": 2026,
+              "chapter": 2,
+              "char_count": 728,
+              "is_empty": false,
+              "chunk_index": 0,
+              "strategy": "by_paragraph"
+            },
+            "score": 0.032787,
+            "strategy": "hybrid_rrf",
+            "dense_rank": 1,
+            "lexical_rank": 1
+          },
+          {
+            "id": "bookdata_01_p95_b001",
+            "source_id": "bookdata_01",
+            "source": "World Bank International Debt Report 2026",
+            "page": 95,
+            "text": "These instruments should be integrated into broader fiscal risk and debtmanagement frameworks. Contingent liabilities, including guarantees to stateowned enterprises, public-private partnerships, financial sector support, and disaster-related obligations, should be identified, monitored, and disclosed. Medium-term expenditure frameworks offer one powerful mechanism for translating these commitments into practice, aligning spending with strategic priorities and ensuring the planning horizon needed to address future shocks before they arrive (World Bank 2012). Food Import Exposure, External Debt Burdens, and Healthy Diet Affordability Food imports are an important channel through which external shocks can affect food and nutrition security. They are particularly relevant as countries face",
+            "metadata": {
+              "section": "fiscal_pressures",
+              "year": 2026,
+              "chapter": 2,
+              "char_count": 797,
+              "is_empty": false,
+              "chunk_index": 1,
+              "strategy": "by_paragraph"
+            },
+            "score": 0.032258,
+            "strategy": "hybrid_rrf",
+            "dense_rank": 2,
+            "lexical_rank": 2
+          },
+          {
+            "id": "bookdata_01_p93_b003",
+            "source_id": "bookdata_01",
+            "source": "World Bank International Debt Report 2026",
+            "page": 93,
+            "text": "is clear: fiscal strategies that save windfalls during economic upturns, such as commodity booms, and deploy those savings during downturns allow governments to respond effectively when shocks arrive. (Box continues on next page)",
+            "metadata": {
+              "section": "fiscal_pressures",
+              "year": 2026,
+              "chapter": 2,
+              "char_count": 229,
+              "is_empty": false,
+              "chunk_index": 3,
+              "strategy": "by_paragraph"
+            },
+            "score": 0.03125,
+            "strategy": "hybrid_rrf",
+            "dense_rank": 4,
+            "lexical_rank": 4
+          }
+        ],
+        "context": "[bookdata_01_p95_b000 | World Bank International Debt Report 2026 | page 95]\n2. DEBT DyNAmIcs: POLIcy ImPLIcATIONs 71 Establishing credible fiscal institutions and fiscal buffers. When a shock hits, the fiscal impact can be immediate and large, as spending needed to protect vulnerable communities rises while revenues fall. Governments can prepare for this tendency by establishing contingency reserves within the annual budget, natural disaster funds with clear rules governing their use and size calibrated to historical experience, and state-contingent debt instruments and other insurance mechanisms that transfer a portion of disaster risk to third parties (Polacek 2018). Well-designed fiscal rules can reinforce these buffers while allowing temporary, transparent flexibility during severe shocks.\n\n[bookdata_01_p95_b001 | World Bank International Debt Report 2026 | page 95]\nThese instruments should be integrated into broader fiscal risk and debtmanagement frameworks. Contingent liabilities, including guarantees to stateowned enterprises, public-private partnerships, financial sector support, and disaster-related obligations, should be identified, monitored, and disclosed. Medium-term expenditure frameworks offer one powerful mechanism for translating these commitments into practice, aligning spending with strategic priorities and ensuring the planning horizon needed to address future shocks before they arrive (World Bank 2012). Food Import Exposure, External Debt Burdens, and Healthy Diet Affordability Food imports are an important channel through which external shocks can affect food and nutrition security. They are particularly relevant as countries face\n\n[bookdata_01_p93_b003 | World Bank International Debt Report 2026 | page 93]\nis clear: fiscal strategies that save windfalls during economic upturns, such as commodity booms, and deploy those savings during downturns allow governments to respond effectively when shocks arrive. (Box continues on next page)",
+        "context_ids": [
+          "bookdata_01_p95_b000",
+          "bookdata_01_p95_b001",
+          "bookdata_01_p93_b003"
+        ]
+      },
+      {
+        "event": "answer"
+      }
+    ],
+    "elapsed_ms": 11880.466666998473,
+    "gold": [
+      {
+        "source_id": "bookdata_01",
+        "page": 95,
+        "evidence": "Governments can prepare for this tendency by establishing contingency reserves within the annual budget, natural disaster funds with clear rules governing their use and size calibrated to historical experience, and state-contingent debt instruments and other insurance mechanisms that transfer a portion of disaster risk to third parties"
+      }
+    ],
+    "expected_answer": "Contingency reserves in the annual budget, natural disaster funds with clear usage rules, and state-contingent debt instruments or third-party disaster risk insurance."
+  },
+  {
+    "query_id": "test_06",
+    "split": "test",
+    "question": "What was the total volume of local-currency green bonds issued by the government of Indonesia in 2025?",
+    "answerable": false,
+    "status": "abstain",
+    "answer": "Không đủ bằng chứng để trả lời.",
+    "citations": [],
+    "events": [
+      {
+        "event": "search",
+        "query": "Indonesia local currency green bonds issued 2025",
+        "filter": null,
+        "results": [
+          {
+            "id": "bookdata_01_p105_b000",
+            "source_id": "bookdata_01",
+            "source": "World Bank International Debt Report 2026",
+            "page": 105,
+            "text": "2. DEBT DyNAmIcs: POLIcy ImPLIcATIONs 81 Middle-Income Countries. Food and Agriculture Organization of the United Nations and World Bank. https://openknowledge.worldbank.org/handle/10986/32503. Herforth, Anna W., Yan Bai, Aishwarya Venkat, and William A. Masters. 2025. “The Healthy Diet Basket Is a Valid Global Standard That Highlights Lack of Access to Healthy and Sustainable Diets.” Nature Food 6: 622–31. https://doi.org/10.1038/s43016-025-01177-0. Milesi-Ferretti, Gian Maria. 2026. “The External Wealth of Nations Database.” Brookings Institution Research, April 9. https://www.brookings.edu/articles/the-external-wealth-of -nations-database/. Polacek, Andy. 2018. “Catastrophe Bonds: A Primer and Retrospective.” Chicago Fed Letter,",
+            "metadata": {
+              "section": "notes_references",
+              "year": 2026,
+              "chapter": 2,
+              "char_count": 741,
+              "is_empty": false,
+              "chunk_index": 0,
+              "strategy": "by_paragraph"
+            },
+            "score": 0.016393,
+            "strategy": "hybrid_rrf",
+            "dense_rank": null,
+            "lexical_rank": 1
+          },
+          {
+            "id": "bookdata_01_p91_b001",
+            "source_id": "bookdata_01",
+            "source": "World Bank International Debt Report 2026",
+            "page": 91,
+            "text": "indicator are over two periods: 2000–14 and 2015–24 for the sample of countries that use the Debt Sustainability Framework for Low-Income Countries. Each box represents the 25th (Q1) to 75th (Q3) percentile range, the line inside the box is the median, the X mark is the mean, and the bottom and top whiskers are the 1.5 × IQR from Q1 and Q3, respectively. IDA = International Development Association; IQR = interquartile range. external amortization has likewise expanded markedly since 2020; in 2025, it represents a principal driver of the renewed increase, consistent with the bunching of repayments on debt contracted during the pandemic and its aftermath—a direct legacy of shock-era borrowing that is now coming due. These developments",
+            "metadata": {
+              "section": "fiscal_pressures",
+              "year": 2026,
+              "chapter": 2,
+              "char_count": 742,
+              "is_empty": false,
+              "chunk_index": 1,
+              "strategy": "by_paragraph"
+            },
+            "score": 0.016393,
+            "strategy": "hybrid_rrf",
+            "dense_rank": 1,
+            "lexical_rank": null
+          },
+          {
+            "id": "bookdata_01_p90_b000",
+            "source_id": "bookdata_01",
+            "source": "World Bank International Debt Report 2026",
+            "page": 90,
+            "text": "INTERNATIONAL DEBT REPORT 2026 66 Domestic creditors in both IDA and International Bank for Reconstruction and Development (IBRD) countries have elevated their exposure to the sovereign over the past 20 years. This move mirrors their respective governments’ growing reliance on domestic financing. However, domestic banks in IDA countries have consistently held a greater share of their balance sheets in sovereign assets than banks in IBRD countries have (figure 2.11). This higher exposure reflects less developed and less diversified private sectors in many IDA countries, as well as fewer investment options as compared to IBRD markets. Domestic banks may therefore have few alternatives to government securities, particularly during",
+            "metadata": {
+              "section": "fiscal_pressures",
+              "year": 2026,
+              "chapter": 2,
+              "char_count": 737,
+              "is_empty": false,
+              "chunk_index": 0,
+              "strategy": "by_paragraph"
+            },
+            "score": 0.016129,
+            "strategy": "hybrid_rrf",
+            "dense_rank": 2,
+            "lexical_rank": null
+          }
+        ],
+        "context": "[bookdata_01_p105_b000 | World Bank International Debt Report 2026 | page 105]\n2. DEBT DyNAmIcs: POLIcy ImPLIcATIONs 81 Middle-Income Countries. Food and Agriculture Organization of the United Nations and World Bank. https://openknowledge.worldbank.org/handle/10986/32503. Herforth, Anna W., Yan Bai, Aishwarya Venkat, and William A. Masters. 2025. “The Healthy Diet Basket Is a Valid Global Standard That Highlights Lack of Access to Healthy and Sustainable Diets.” Nature Food 6: 622–31. https://doi.org/10.1038/s43016-025-01177-0. Milesi-Ferretti, Gian Maria. 2026. “The External Wealth of Nations Database.” Brookings Institution Research, April 9. https://www.brookings.edu/articles/the-external-wealth-of -nations-database/. Polacek, Andy. 2018. “Catastrophe Bonds: A Primer and Retrospective.” Chicago Fed Letter,\n\n[bookdata_01_p91_b001 | World Bank International Debt Report 2026 | page 91]\nindicator are over two periods: 2000–14 and 2015–24 for the sample of countries that use the Debt Sustainability Framework for Low-Income Countries. Each box represents the 25th (Q1) to 75th (Q3) percentile range, the line inside the box is the median, the X mark is the mean, and the bottom and top whiskers are the 1.5 × IQR from Q1 and Q3, respectively. IDA = International Development Association; IQR = interquartile range. external amortization has likewise expanded markedly since 2020; in 2025, it represents a principal driver of the renewed increase, consistent with the bunching of repayments on debt contracted during the pandemic and its aftermath—a direct legacy of shock-era borrowing that is now coming due. These developments",
+        "context_ids": [
+          "bookdata_01_p105_b000",
+          "bookdata_01_p91_b001"
+        ]
+      },
+      {
+        "event": "search",
+        "query": "Indonesia local currency green bonds issued 2025",
+        "filter": null,
+        "results": [
+          {
+            "id": "bookdata_01_p105_b000",
+            "source_id": "bookdata_01",
+            "source": "World Bank International Debt Report 2026",
+            "page": 105,
+            "text": "2. DEBT DyNAmIcs: POLIcy ImPLIcATIONs 81 Middle-Income Countries. Food and Agriculture Organization of the United Nations and World Bank. https://openknowledge.worldbank.org/handle/10986/32503. Herforth, Anna W., Yan Bai, Aishwarya Venkat, and William A. Masters. 2025. “The Healthy Diet Basket Is a Valid Global Standard That Highlights Lack of Access to Healthy and Sustainable Diets.” Nature Food 6: 622–31. https://doi.org/10.1038/s43016-025-01177-0. Milesi-Ferretti, Gian Maria. 2026. “The External Wealth of Nations Database.” Brookings Institution Research, April 9. https://www.brookings.edu/articles/the-external-wealth-of -nations-database/. Polacek, Andy. 2018. “Catastrophe Bonds: A Primer and Retrospective.” Chicago Fed Letter,",
+            "metadata": {
+              "section": "notes_references",
+              "year": 2026,
+              "chapter": 2,
+              "char_count": 741,
+              "is_empty": false,
+              "chunk_index": 0,
+              "strategy": "by_paragraph"
+            },
+            "score": 0.016393,
+            "strategy": "hybrid_rrf",
+            "dense_rank": null,
+            "lexical_rank": 1
+          },
+          {
+            "id": "bookdata_01_p91_b001",
+            "source_id": "bookdata_01",
+            "source": "World Bank International Debt Report 2026",
+            "page": 91,
+            "text": "indicator are over two periods: 2000–14 and 2015–24 for the sample of countries that use the Debt Sustainability Framework for Low-Income Countries. Each box represents the 25th (Q1) to 75th (Q3) percentile range, the line inside the box is the median, the X mark is the mean, and the bottom and top whiskers are the 1.5 × IQR from Q1 and Q3, respectively. IDA = International Development Association; IQR = interquartile range. external amortization has likewise expanded markedly since 2020; in 2025, it represents a principal driver of the renewed increase, consistent with the bunching of repayments on debt contracted during the pandemic and its aftermath—a direct legacy of shock-era borrowing that is now coming due. These developments",
+            "metadata": {
+              "section": "fiscal_pressures",
+              "year": 2026,
+              "chapter": 2,
+              "char_count": 742,
+              "is_empty": false,
+              "chunk_index": 1,
+              "strategy": "by_paragraph"
+            },
+            "score": 0.016393,
+            "strategy": "hybrid_rrf",
+            "dense_rank": 1,
+            "lexical_rank": null
+          },
+          {
+            "id": "bookdata_01_p90_b000",
+            "source_id": "bookdata_01",
+            "source": "World Bank International Debt Report 2026",
+            "page": 90,
+            "text": "INTERNATIONAL DEBT REPORT 2026 66 Domestic creditors in both IDA and International Bank for Reconstruction and Development (IBRD) countries have elevated their exposure to the sovereign over the past 20 years. This move mirrors their respective governments’ growing reliance on domestic financing. However, domestic banks in IDA countries have consistently held a greater share of their balance sheets in sovereign assets than banks in IBRD countries have (figure 2.11). This higher exposure reflects less developed and less diversified private sectors in many IDA countries, as well as fewer investment options as compared to IBRD markets. Domestic banks may therefore have few alternatives to government securities, particularly during",
+            "metadata": {
+              "section": "fiscal_pressures",
+              "year": 2026,
+              "chapter": 2,
+              "char_count": 737,
+              "is_empty": false,
+              "chunk_index": 0,
+              "strategy": "by_paragraph"
+            },
+            "score": 0.016129,
+            "strategy": "hybrid_rrf",
+            "dense_rank": 2,
+            "lexical_rank": null
+          }
+        ],
+        "context": "[bookdata_01_p105_b000 | World Bank International Debt Report 2026 | page 105]\n2. DEBT DyNAmIcs: POLIcy ImPLIcATIONs 81 Middle-Income Countries. Food and Agriculture Organization of the United Nations and World Bank. https://openknowledge.worldbank.org/handle/10986/32503. Herforth, Anna W., Yan Bai, Aishwarya Venkat, and William A. Masters. 2025. “The Healthy Diet Basket Is a Valid Global Standard That Highlights Lack of Access to Healthy and Sustainable Diets.” Nature Food 6: 622–31. https://doi.org/10.1038/s43016-025-01177-0. Milesi-Ferretti, Gian Maria. 2026. “The External Wealth of Nations Database.” Brookings Institution Research, April 9. https://www.brookings.edu/articles/the-external-wealth-of -nations-database/. Polacek, Andy. 2018. “Catastrophe Bonds: A Primer and Retrospective.” Chicago Fed Letter,\n\n[bookdata_01_p91_b001 | World Bank International Debt Report 2026 | page 91]\nindicator are over two periods: 2000–14 and 2015–24 for the sample of countries that use the Debt Sustainability Framework for Low-Income Countries. Each box represents the 25th (Q1) to 75th (Q3) percentile range, the line inside the box is the median, the X mark is the mean, and the bottom and top whiskers are the 1.5 × IQR from Q1 and Q3, respectively. IDA = International Development Association; IQR = interquartile range. external amortization has likewise expanded markedly since 2020; in 2025, it represents a principal driver of the renewed increase, consistent with the bunching of repayments on debt contracted during the pandemic and its aftermath—a direct legacy of shock-era borrowing that is now coming due. These developments",
+        "context_ids": [
+          "bookdata_01_p105_b000",
+          "bookdata_01_p91_b001"
+        ]
+      },
+      {
+        "event": "invalid_or_missing_citations"
+      }
+    ],
+    "elapsed_ms": 18607.955833000233,
+    "gold": [],
+    "expected_answer": "Không đủ bằng chứng trong tài liệu để trả lời."
+  },
+  {
+    "query_id": "test_07",
+    "split": "test",
+    "question": "What was the monthly consumer price index (CPI) headline inflation rate recorded in Argentina in September 2026?",
+    "answerable": false,
+    "status": "abstain",
+    "answer": "Không đủ bằng chứng để trả lời.",
+    "citations": [],
+    "events": [
+      {
+        "event": "search",
+        "query": "Argentina monthly consumer price index CPI headline inflation rate September 2026",
+        "filter": null,
+        "results": [
+          {
+            "id": "bookdata_01_p80_b001",
+            "source_id": "bookdata_01",
+            "source": "World Bank International Debt Report 2026",
+            "page": 80,
+            "text": "to 8.3 percent between January and June, with higher inflation expectations for 2026. Energy prices have increased, as well, by 1.1 percentage points between January and June 2026 (excluding China). To ease price pressures, several central banks have raised interest rates. In addition, several commodityimporting LMICs have introduced subsidies in response to higher fuel prices (World Bank 2026b). Figure 2.4 Headline Consumer Prices in Commodity-Importing Low- and Middle-Income Countries, 2024–26 2 4 6 8 10 12 14 2024 2025 2026 Commodity-importing LMICs Commodity-importing LMICs (excl. China) Percent change from a year earlier Sources: Original calculations based on data from Haver Analytics; International Monetary Fund; World Bank Group.",
+            "metadata": {
+              "section": "transmission_shocks",
+              "year": 2026,
+              "chapter": 2,
+              "char_count": 747,
+              "is_empty": false,
+              "chunk_index": 1,
+              "strategy": "by_paragraph"
+            },
+            "score": 0.032787,
+            "strategy": "hybrid_rrf",
+            "dense_rank": 1,
+            "lexical_rank": 1
+          },
+          {
+            "id": "bookdata_01_p80_b002",
+            "source_id": "bookdata_01",
+            "source": "World Bank International Debt Report 2026",
+            "page": 80,
+            "text": "Note: Figure shows year-on-year changes in nonseasonally adjusted headline consumer prices. Aggregates are computed as geometric weighted averages using nominal GDP in US dollars as weights. Sample includes up to 40 economies. Last observation is June 2026. LMICs = low- and middle-income countries.",
+            "metadata": {
+              "section": "transmission_shocks",
+              "year": 2026,
+              "chapter": 2,
+              "char_count": 299,
+              "is_empty": false,
+              "chunk_index": 2,
+              "strategy": "by_paragraph"
+            },
+            "score": 0.032258,
+            "strategy": "hybrid_rrf",
+            "dense_rank": 2,
+            "lexical_rank": 2
+          },
+          {
+            "id": "bookdata_01_p80_b000",
+            "source_id": "bookdata_01",
+            "source": "World Bank International Debt Report 2026",
+            "page": 80,
+            "text": "INTERNATIONAL DEBT REPORT 2026 56 Inflation in commodity-importing LMICs has increased following a major energy supply shock in 2026. The conflict in the Middle East involving major energy producers, which began at the end of February 2026, has caused a surge in headline inflation in these countries, to 3.6 percent in June 2026, from the preconflict level of 2.6 percent (figure 2.4). Among market participants, inflation expectations for 2026 have also risen, from 2.7 percent according to preconflict February surveys to 3.4 percent in July. Excluding China, which has been relatively insulated from the shock, partly because of its large petroleum reserves, inflation in commodity-importing LMICs increased from 7.0 percent",
+            "metadata": {
+              "section": "transmission_shocks",
+              "year": 2026,
+              "chapter": 2,
+              "char_count": 728,
+              "is_empty": false,
+              "chunk_index": 0,
+              "strategy": "by_paragraph"
+            },
+            "score": 0.031746,
+            "strategy": "hybrid_rrf",
+            "dense_rank": 3,
+            "lexical_rank": 3
+          }
+        ],
+        "context": "[bookdata_01_p80_b001 | World Bank International Debt Report 2026 | page 80]\nto 8.3 percent between January and June, with higher inflation expectations for 2026. Energy prices have increased, as well, by 1.1 percentage points between January and June 2026 (excluding China). To ease price pressures, several central banks have raised interest rates. In addition, several commodityimporting LMICs have introduced subsidies in response to higher fuel prices (World Bank 2026b). Figure 2.4 Headline Consumer Prices in Commodity-Importing Low- and Middle-Income Countries, 2024–26 2 4 6 8 10 12 14 2024 2025 2026 Commodity-importing LMICs Commodity-importing LMICs (excl. China) Percent change from a year earlier Sources: Original calculations based on data from Haver Analytics; International Monetary Fund; World Bank Group.\n\n[bookdata_01_p80_b002 | World Bank International Debt Report 2026 | page 80]\nNote: Figure shows year-on-year changes in nonseasonally adjusted headline consumer prices. Aggregates are computed as geometric weighted averages using nominal GDP in US dollars as weights. Sample includes up to 40 economies. Last observation is June 2026. LMICs = low- and middle-income countries.\n\n[bookdata_01_p80_b000 | World Bank International Debt Report 2026 | page 80]\nINTERNATIONAL DEBT REPORT 2026 56 Inflation in commodity-importing LMICs has increased following a major energy supply shock in 2026. The conflict in the Middle East involving major energy producers, which began at the end of February 2026, has caused a surge in headline inflation in these countries, to 3.6 percent in June 2026, from the preconflict level of 2.6 percent (figure 2.4). Among market participants, inflation expectations for 2026 have also risen, from 2.7 percent according to preconflict February surveys to 3.4 percent in July. Excluding China, which has been relatively insulated from the shock, partly because of its large petroleum reserves, inflation in commodity-importing LMICs increased from 7.0 percent",
+        "context_ids": [
+          "bookdata_01_p80_b001",
+          "bookdata_01_p80_b002",
+          "bookdata_01_p80_b000"
+        ]
+      },
+      {
+        "event": "invalid_or_missing_citations"
+      }
+    ],
+    "elapsed_ms": 43086.64424999915,
+    "gold": [],
+    "expected_answer": "Không đủ bằng chứng trong tài liệu để trả lời."
+  },
+  {
+    "query_id": "test_08",
+    "split": "test",
+    "question": "What is the exact mathematical weighting formula used by the IMF to calculate SDR interest rate allocations in 2026?",
+    "answerable": false,
+    "status": "abstain",
+    "answer": "Không đủ bằng chứng để trả lời.",
+    "citations": [],
+    "events": [
+      {
+        "event": "search",
+        "query": "IMF SDR interest rate allocations formula 2026",
+        "filter": null,
+        "results": [
+          {
+            "id": "bookdata_01_p92_b000",
+            "source_id": "bookdata_01",
+            "source": "World Bank International Debt Report 2026",
+            "page": 92,
+            "text": "INTERNATIONAL DEBT REPORT 2026 68 borrowing increases exposure to exchange rate and refinancing shocks. At the same time, high debt limits countries’ ability to borrow to close financing gaps. Countries are therefore left increasingly exposed to shocks, with minimal fiscal and financial buffers. Sound fiscal and debt policies are central to preparing for, responding to, and recovering from external shocks. Fiscal buffers and debt sustainability determine the extent to which countries can absorb shocks and support recovery. Countries that entered shock episodes with adequate fiscal buffers, manageable debt levels, and a track record of countercyclical policies consistently limited longterm output losses. By contrast, high debt and procyclical spending amplified",
+            "metadata": {
+              "section": "fiscal_pressures",
+              "year": 2026,
+              "chapter": 2,
+              "char_count": 770,
+              "is_empty": false,
+              "chunk_index": 0,
+              "strategy": "by_paragraph"
+            },
+            "score": 0.03031,
+            "strategy": "hybrid_rrf",
+            "dense_rank": 5,
+            "lexical_rank": 7
+          },
+          {
+            "id": "bookdata_01_p81_b000",
+            "source_id": "bookdata_01",
+            "source": "World Bank International Debt Report 2026",
+            "page": 81,
+            "text": "2. DEBT DyNAmIcs: POLIcy ImPLIcATIONs 57 Figure 2.5 Exchange Rates in Commodity-Importing Low- and Middle-Income Countries, 2026 –2 0 Percent change since January 2 4 Jan Feb Mar Apr May Jun Jul Average Interquartile range Sources: Original calculations based on data from the Bank for International Settlements; Haver Analytics; World Bank Group. Note: Figure shows changes in exchange rates relative to the US dollar since January 2026 among commodity-importing low- and middle-income countries with flexible exchange rate regimes or intermediate arrangements. Average refers to simple averages across 28 economies. The energy supply shock in 2026 has caused exchange rates in commodityimporting LMICs to fall, worsening trade balances. Among commodity-importing",
+            "metadata": {
+              "section": "transmission_shocks",
+              "year": 2026,
+              "chapter": 2,
+              "char_count": 764,
+              "is_empty": false,
+              "chunk_index": 0,
+              "strategy": "by_paragraph"
+            },
+            "score": 0.029877,
+            "strategy": "hybrid_rrf",
+            "dense_rank": 9,
+            "lexical_rank": 5
+          },
+          {
+            "id": "bookdata_01_p81_b001",
+            "source_id": "bookdata_01",
+            "source": "World Bank International Debt Report 2026",
+            "page": 81,
+            "text": "LMICs with flexible or adjustable exchange rate regimes, currencies depreciated by about 1.7 percent between January and July 2026 (figure 2.5), on average. In contrast, currencies in commodity-exporting LMICs with flexible regimes appreciated by an average of 2.5 percent over the same period. Currency pressures have made imports more expensive in commodity importers and worsened trade balances. Across commodity-importing LMICs with flexible or adjustable currency regimes, merchandise import values, in US dollar terms, increased by an average 23 percent between February and June 2026 compared with the same months of 2025. Excluding China, the rate of increase was 21 percent, on average. As import values increased faster than those of exports,",
+            "metadata": {
+              "section": "transmission_shocks",
+              "year": 2026,
+              "chapter": 2,
+              "char_count": 752,
+              "is_empty": false,
+              "chunk_index": 1,
+              "strategy": "by_paragraph"
+            },
+            "score": 0.016393,
+            "strategy": "hybrid_rrf",
+            "dense_rank": null,
+            "lexical_rank": 1
+          }
+        ],
+        "context": "[bookdata_01_p92_b000 | World Bank International Debt Report 2026 | page 92]\nINTERNATIONAL DEBT REPORT 2026 68 borrowing increases exposure to exchange rate and refinancing shocks. At the same time, high debt limits countries’ ability to borrow to close financing gaps. Countries are therefore left increasingly exposed to shocks, with minimal fiscal and financial buffers. Sound fiscal and debt policies are central to preparing for, responding to, and recovering from external shocks. Fiscal buffers and debt sustainability determine the extent to which countries can absorb shocks and support recovery. Countries that entered shock episodes with adequate fiscal buffers, manageable debt levels, and a track record of countercyclical policies consistently limited longterm output losses. By contrast, high debt and procyclical spending amplified\n\n[bookdata_01_p81_b000 | World Bank International Debt Report 2026 | page 81]\n2. DEBT DyNAmIcs: POLIcy ImPLIcATIONs 57 Figure 2.5 Exchange Rates in Commodity-Importing Low- and Middle-Income Countries, 2026 –2 0 Percent change since January 2 4 Jan Feb Mar Apr May Jun Jul Average Interquartile range Sources: Original calculations based on data from the Bank for International Settlements; Haver Analytics; World Bank Group. Note: Figure shows changes in exchange rates relative to the US dollar since January 2026 among commodity-importing low- and middle-income countries with flexible exchange rate regimes or intermediate arrangements. Average refers to simple averages across 28 economies. The energy supply shock in 2026 has caused exchange rates in commodityimporting LMICs to fall, worsening trade balances. Among commodity-importing",
+        "context_ids": [
+          "bookdata_01_p92_b000",
+          "bookdata_01_p81_b000"
+        ]
+      },
+      {
+        "event": "invalid_or_missing_citations"
+      }
+    ],
+    "elapsed_ms": 5325.026000000435,
+    "gold": [],
+    "expected_answer": "Không đủ bằng chứng trong tài liệu để trả lời."
+  },
+  {
+    "query_id": "test_09",
+    "split": "test",
+    "question": "How many metric tons of milling wheat did the government of Egypt purchase from Romania under government tender in August 2025?",
+    "answerable": false,
+    "status": "abstain",
+    "answer": "Không đủ bằng chứng để trả lời.",
+    "citations": [],
+    "events": [
+      {
+        "event": "search",
+        "query": "Egypt milling wheat purchase Romania August 2025",
+        "filter": null,
+        "results": [
+          {
+            "id": "bookdata_01_p97_b001",
+            "source_id": "bookdata_01",
+            "source": "World Bank International Debt Report 2026",
+            "page": 97,
+            "text": "in 2025. GNI per capita refers to 2025. Food import shares are averages of available annual observations during 2017–25. For external debt stocks relative to exports, all economies use 2025 observations except Algeria, which uses 2024 observations because the 2025 value is unavailable. Fitted curves are population-weighted fractional logit regressions with 95 percent confidence intervals. GNI = gross national income. The overlap is widespread: 45 economies, of which 37 are MICs, meet both thresholds for at least one food group. Sixteen economies meet both thresholds in at least four food groups. Of those 16 economies, 10 are currently eligible for IDA financing: Bhutan, Cabo Verde, Comoros, Dominica, Fiji, The Gambia, São Tomé and Príncipe, Saint Vincent and the",
+            "metadata": {
+              "section": "food_import",
+              "year": 2026,
+              "chapter": 2,
+              "char_count": 772,
+              "is_empty": false,
+              "chunk_index": 1,
+              "strategy": "by_paragraph"
+            },
+            "score": 0.031778,
+            "strategy": "hybrid_rrf",
+            "dense_rank": 5,
+            "lexical_rank": 1
+          },
+          {
+            "id": "bookdata_01_p98_b000",
+            "source_id": "bookdata_01",
+            "source": "World Bank International Debt Report 2026",
+            "page": 98,
+            "text": "INTERNATIONAL DEBT REPORT 2026 74 Figure 2.14 Net Importing Economies and External Debt Burdens, by Food Group, Income Group, and Population, 2025 Share of exports (%) 100 200 300 400 500 700 600 800 Net import reliance (%) 150 CPV MNE VCT TUN COM BTN YEM LBN GNB COLSLVSTP MNG SENVUTKENECU FJ I NIC DOM HND JOR JAM GMB 125 100 75 50 25 0 Net import reliance (%) 150 125 100 75 50 25 0 Share of exports (%) 100 200 300 400 500 700 600 800 a. Starchy staples b. Oils and fats Share of exports (%) 100 200 300 400 500 700 600 800 Share of exports (%) 100 200 300 400 500 700 600 800 Net import reliance (%) 150 125 100 75 50 25 0 Net import reliance (%) 150 125 100 75 50 25 0 c. Legumes, nuts, and seeds d. Animal-source foods YEM LBN MOZ LKA PAK UZB ETH KEN KGZ MNE SURNER BGD SEN COM RWABTN SLV",
+            "metadata": {
+              "section": "food_import",
+              "year": 2026,
+              "chapter": 2,
+              "char_count": 795,
+              "is_empty": false,
+              "chunk_index": 0,
+              "strategy": "by_paragraph"
+            },
+            "score": 0.016393,
+            "strategy": "hybrid_rrf",
+            "dense_rank": 1,
+            "lexical_rank": null
+          },
+          {
+            "id": "bookdata_01_p101_b003",
+            "source_id": "bookdata_01",
+            "source": "World Bank International Debt Report 2026",
+            "page": 101,
+            "text": "in global food prices during 2021–23, and the subsequent easing of food price pressures during 2023–25.",
+            "metadata": {
+              "section": "food_import",
+              "year": 2026,
+              "chapter": 2,
+              "char_count": 103,
+              "is_empty": false,
+              "chunk_index": 3,
+              "strategy": "by_paragraph"
+            },
+            "score": 0.016129,
+            "strategy": "hybrid_rrf",
+            "dense_rank": 2,
+            "lexical_rank": null
+          }
+        ],
+        "context": "[bookdata_01_p97_b001 | World Bank International Debt Report 2026 | page 97]\nin 2025. GNI per capita refers to 2025. Food import shares are averages of available annual observations during 2017–25. For external debt stocks relative to exports, all economies use 2025 observations except Algeria, which uses 2024 observations because the 2025 value is unavailable. Fitted curves are population-weighted fractional logit regressions with 95 percent confidence intervals. GNI = gross national income. The overlap is widespread: 45 economies, of which 37 are MICs, meet both thresholds for at least one food group. Sixteen economies meet both thresholds in at least four food groups. Of those 16 economies, 10 are currently eligible for IDA financing: Bhutan, Cabo Verde, Comoros, Dominica, Fiji, The Gambia, São Tomé and Príncipe, Saint Vincent and the\n\n[bookdata_01_p98_b000 | World Bank International Debt Report 2026 | page 98]\nINTERNATIONAL DEBT REPORT 2026 74 Figure 2.14 Net Importing Economies and External Debt Burdens, by Food Group, Income Group, and Population, 2025 Share of exports (%) 100 200 300 400 500 700 600 800 Net import reliance (%) 150 CPV MNE VCT TUN COM BTN YEM LBN GNB COLSLVSTP MNG SENVUTKENECU FJ I NIC DOM HND JOR JAM GMB 125 100 75 50 25 0 Net import reliance (%) 150 125 100 75 50 25 0 Share of exports (%) 100 200 300 400 500 700 600 800 a. Starchy staples b. Oils and fats Share of exports (%) 100 200 300 400 500 700 600 800 Share of exports (%) 100 200 300 400 500 700 600 800 Net import reliance (%) 150 125 100 75 50 25 0 Net import reliance (%) 150 125 100 75 50 25 0 c. Legumes, nuts, and seeds d. Animal-source foods YEM LBN MOZ LKA PAK UZB ETH KEN KGZ MNE SURNER BGD SEN COM RWABTN SLV\n\n[bookdata_01_p101_b003 | World Bank International Debt Report 2026 | page 101]\nin global food prices during 2021–23, and the subsequent easing of food price pressures during 2023–25.",
+        "context_ids": [
+          "bookdata_01_p97_b001",
+          "bookdata_01_p98_b000",
+          "bookdata_01_p101_b003"
+        ]
+      },
+      {
+        "event": "invalid_or_missing_citations"
+      }
+    ],
+    "elapsed_ms": 3374.718707998909,
+    "gold": [],
+    "expected_answer": "Không đủ bằng chứng trong tài liệu để trả lời."
+  },
+  {
+    "query_id": "test_10",
+    "split": "test",
+    "question": "What was the targeted primary budget surplus agreed between Pakistan and the IMF under their 2025 Extended Fund Facility review?",
+    "answerable": false,
+    "status": "abstain",
+    "answer": "Không đủ bằng chứng để trả lời.",
+    "citations": [],
+    "events": [
+      {
+        "event": "search",
+        "query": "Pakistan IMF 2025 Extended Fund Facility review primary budget surplus",
+        "filter": null,
+        "results": [
+          {
+            "id": "bookdata_01_p87_b001",
+            "source_id": "bookdata_01",
+            "source": "World Bank International Debt Report 2026",
+            "page": 87,
+            "text": "indicating the primary deficit or surplus that would keep the debt-to-GDP ratio unchanged, given the country’s existing debt, borrowing costs, and GDP growth.2 This calculation suggests that the continued elevation of GFNs is not primarily the result of a renewed widening of primary deficits. Rather, it reflects the debt stock accumulated following successive shocks, higher interest costs, the rollover of maturing obligations, and, in some cases, balance of payments financing needs. Figure 2.9 Change in Debt-Stabilizing Primary Deficit Across IDA-Eligible Countries, 2000–25 –30 –20 –10 0 10 20 30 20002001200220032004200520062007200820092010201120122013201420152016201720182019202020212022202320242025 % of GDP Sources: Original calculations based on data from country authorities.",
+            "metadata": {
+              "section": "fiscal_pressures",
+              "year": 2026,
+              "chapter": 2,
+              "char_count": 788,
+              "is_empty": false,
+              "chunk_index": 1,
+              "strategy": "by_paragraph"
+            },
+            "score": 0.032522,
+            "strategy": "hybrid_rrf",
+            "dense_rank": 2,
+            "lexical_rank": 1
+          },
+          {
+            "id": "bookdata_01_p88_b002",
+            "source_id": "bookdata_01",
+            "source": "World Bank International Debt Report 2026",
+            "page": 88,
+            "text": "Group and the International Monetary Fund, with that review approved by their respective Executive Boards in September 2026. The revised framework is expected to be finalized in 2027; box 2.2 summarizes its key features. Figure 2.10 Change in LIC-DSF External Risk Ratings, 2020–25 2 0 3 1 3 6 15 0 5 10 15 20 25 –5 –7 –3 –3 –2 –2 –22 2020 2021 2022 2023 2024 2025 2020–25 2020 2021 2022 2023 2024 2025 2020–25 0 –5 –10 –15 –20 –25 a. Number of downgrades b. Number of upgrades Source: World Bank–International Monetary Fund Debt Sustainability Framework for Low-Income Countries (LIC-DSF) as of December 2025. Note: In each panel, the final 2020–25 bar summarizes the total upgrades/downgrades for the period.",
+            "metadata": {
+              "section": "fiscal_pressures",
+              "year": 2026,
+              "chapter": 2,
+              "char_count": 710,
+              "is_empty": false,
+              "chunk_index": 2,
+              "strategy": "by_paragraph"
+            },
+            "score": 0.032522,
+            "strategy": "hybrid_rrf",
+            "dense_rank": 1,
+            "lexical_rank": 2
+          },
+          {
+            "id": "bookdata_01_p105_b002",
+            "source_id": "bookdata_01",
+            "source": "World Bank International Debt Report 2026",
+            "page": 105,
+            "text": "World Bank. 2012. Beyond the Annual Budget: Global Experience with Medium-Term Expenditure Frameworks. World Bank. https://openknowledge.worldbank.org/entities / publication/8dfe6a58-a6bb-5735-9723-d5244eb6fe5d. World Bank. 2025. International Debt Report 2025. World Bank. https://doi.org/10.1596/978 -1-4648-2262-9. World Bank. 2026a. Commodity Markets Outlook, April 2026. World Bank. https://openknowledge .worldbank.org/entities/publication/3ede6f8c-ba03-4176-867c-40e604698570. World Bank. 2026b. Global Economic Prospects, June 2026. World Bank. https://thedocs .worldbank.org/en/doc/2b672b3b0415d6b66c45b66579db4ef5-0050012026/global-economic -prospects-june-2026. World Bank. 2026c. “World Bank Board Endorses Reforms to the Bank-Fund Debt Sustainability",
+            "metadata": {
+              "section": "notes_references",
+              "year": 2026,
+              "chapter": 2,
+              "char_count": 763,
+              "is_empty": false,
+              "chunk_index": 2,
+              "strategy": "by_paragraph"
+            },
+            "score": 0.031498,
+            "strategy": "hybrid_rrf",
+            "dense_rank": 4,
+            "lexical_rank": 3
+          }
+        ],
+        "context": "[bookdata_01_p87_b001 | World Bank International Debt Report 2026 | page 87]\nindicating the primary deficit or surplus that would keep the debt-to-GDP ratio unchanged, given the country’s existing debt, borrowing costs, and GDP growth.2 This calculation suggests that the continued elevation of GFNs is not primarily the result of a renewed widening of primary deficits. Rather, it reflects the debt stock accumulated following successive shocks, higher interest costs, the rollover of maturing obligations, and, in some cases, balance of payments financing needs. Figure 2.9 Change in Debt-Stabilizing Primary Deficit Across IDA-Eligible Countries, 2000–25 –30 –20 –10 0 10 20 30 20002001200220032004200520062007200820092010201120122013201420152016201720182019202020212022202320242025 % of GDP Sources: Original calculations based on data from country authorities.\n\n[bookdata_01_p88_b002 | World Bank International Debt Report 2026 | page 88]\nGroup and the International Monetary Fund, with that review approved by their respective Executive Boards in September 2026. The revised framework is expected to be finalized in 2027; box 2.2 summarizes its key features. Figure 2.10 Change in LIC-DSF External Risk Ratings, 2020–25 2 0 3 1 3 6 15 0 5 10 15 20 25 –5 –7 –3 –3 –2 –2 –22 2020 2021 2022 2023 2024 2025 2020–25 2020 2021 2022 2023 2024 2025 2020–25 0 –5 –10 –15 –20 –25 a. Number of downgrades b. Number of upgrades Source: World Bank–International Monetary Fund Debt Sustainability Framework for Low-Income Countries (LIC-DSF) as of December 2025. Note: In each panel, the final 2020–25 bar summarizes the total upgrades/downgrades for the period.",
+        "context_ids": [
+          "bookdata_01_p87_b001",
+          "bookdata_01_p88_b002"
+        ]
+      },
+      {
+        "event": "search",
+        "query": "Pakistan IMF 2025 Extended Fund Facility review primary budget surplus",
+        "filter": null,
+        "results": [
+          {
+            "id": "bookdata_01_p87_b001",
+            "source_id": "bookdata_01",
+            "source": "World Bank International Debt Report 2026",
+            "page": 87,
+            "text": "indicating the primary deficit or surplus that would keep the debt-to-GDP ratio unchanged, given the country’s existing debt, borrowing costs, and GDP growth.2 This calculation suggests that the continued elevation of GFNs is not primarily the result of a renewed widening of primary deficits. Rather, it reflects the debt stock accumulated following successive shocks, higher interest costs, the rollover of maturing obligations, and, in some cases, balance of payments financing needs. Figure 2.9 Change in Debt-Stabilizing Primary Deficit Across IDA-Eligible Countries, 2000–25 –30 –20 –10 0 10 20 30 20002001200220032004200520062007200820092010201120122013201420152016201720182019202020212022202320242025 % of GDP Sources: Original calculations based on data from country authorities.",
+            "metadata": {
+              "section": "fiscal_pressures",
+              "year": 2026,
+              "chapter": 2,
+              "char_count": 788,
+              "is_empty": false,
+              "chunk_index": 1,
+              "strategy": "by_paragraph"
+            },
+            "score": 0.032522,
+            "strategy": "hybrid_rrf",
+            "dense_rank": 2,
+            "lexical_rank": 1
+          },
+          {
+            "id": "bookdata_01_p88_b002",
+            "source_id": "bookdata_01",
+            "source": "World Bank International Debt Report 2026",
+            "page": 88,
+            "text": "Group and the International Monetary Fund, with that review approved by their respective Executive Boards in September 2026. The revised framework is expected to be finalized in 2027; box 2.2 summarizes its key features. Figure 2.10 Change in LIC-DSF External Risk Ratings, 2020–25 2 0 3 1 3 6 15 0 5 10 15 20 25 –5 –7 –3 –3 –2 –2 –22 2020 2021 2022 2023 2024 2025 2020–25 2020 2021 2022 2023 2024 2025 2020–25 0 –5 –10 –15 –20 –25 a. Number of downgrades b. Number of upgrades Source: World Bank–International Monetary Fund Debt Sustainability Framework for Low-Income Countries (LIC-DSF) as of December 2025. Note: In each panel, the final 2020–25 bar summarizes the total upgrades/downgrades for the period.",
+            "metadata": {
+              "section": "fiscal_pressures",
+              "year": 2026,
+              "chapter": 2,
+              "char_count": 710,
+              "is_empty": false,
+              "chunk_index": 2,
+              "strategy": "by_paragraph"
+            },
+            "score": 0.032522,
+            "strategy": "hybrid_rrf",
+            "dense_rank": 1,
+            "lexical_rank": 2
+          },
+          {
+            "id": "bookdata_01_p105_b002",
+            "source_id": "bookdata_01",
+            "source": "World Bank International Debt Report 2026",
+            "page": 105,
+            "text": "World Bank. 2012. Beyond the Annual Budget: Global Experience with Medium-Term Expenditure Frameworks. World Bank. https://openknowledge.worldbank.org/entities / publication/8dfe6a58-a6bb-5735-9723-d5244eb6fe5d. World Bank. 2025. International Debt Report 2025. World Bank. https://doi.org/10.1596/978 -1-4648-2262-9. World Bank. 2026a. Commodity Markets Outlook, April 2026. World Bank. https://openknowledge .worldbank.org/entities/publication/3ede6f8c-ba03-4176-867c-40e604698570. World Bank. 2026b. Global Economic Prospects, June 2026. World Bank. https://thedocs .worldbank.org/en/doc/2b672b3b0415d6b66c45b66579db4ef5-0050012026/global-economic -prospects-june-2026. World Bank. 2026c. “World Bank Board Endorses Reforms to the Bank-Fund Debt Sustainability",
+            "metadata": {
+              "section": "notes_references",
+              "year": 2026,
+              "chapter": 2,
+              "char_count": 763,
+              "is_empty": false,
+              "chunk_index": 2,
+              "strategy": "by_paragraph"
+            },
+            "score": 0.031258,
+            "strategy": "hybrid_rrf",
+            "dense_rank": 5,
+            "lexical_rank": 3
+          }
+        ],
+        "context": "[bookdata_01_p87_b001 | World Bank International Debt Report 2026 | page 87]\nindicating the primary deficit or surplus that would keep the debt-to-GDP ratio unchanged, given the country’s existing debt, borrowing costs, and GDP growth.2 This calculation suggests that the continued elevation of GFNs is not primarily the result of a renewed widening of primary deficits. Rather, it reflects the debt stock accumulated following successive shocks, higher interest costs, the rollover of maturing obligations, and, in some cases, balance of payments financing needs. Figure 2.9 Change in Debt-Stabilizing Primary Deficit Across IDA-Eligible Countries, 2000–25 –30 –20 –10 0 10 20 30 20002001200220032004200520062007200820092010201120122013201420152016201720182019202020212022202320242025 % of GDP Sources: Original calculations based on data from country authorities.\n\n[bookdata_01_p88_b002 | World Bank International Debt Report 2026 | page 88]\nGroup and the International Monetary Fund, with that review approved by their respective Executive Boards in September 2026. The revised framework is expected to be finalized in 2027; box 2.2 summarizes its key features. Figure 2.10 Change in LIC-DSF External Risk Ratings, 2020–25 2 0 3 1 3 6 15 0 5 10 15 20 25 –5 –7 –3 –3 –2 –2 –22 2020 2021 2022 2023 2024 2025 2020–25 2020 2021 2022 2023 2024 2025 2020–25 0 –5 –10 –15 –20 –25 a. Number of downgrades b. Number of upgrades Source: World Bank–International Monetary Fund Debt Sustainability Framework for Low-Income Countries (LIC-DSF) as of December 2025. Note: In each panel, the final 2020–25 bar summarizes the total upgrades/downgrades for the period.",
+        "context_ids": [
+          "bookdata_01_p87_b001",
+          "bookdata_01_p88_b002"
+        ]
+      },
+      {
+        "event": "search",
+        "query": "Pakistan IMF 2025 Extended Fund Facility review primary budget surplus",
+        "filter": null,
+        "results": [
+          {
+            "id": "bookdata_01_p87_b001",
+            "source_id": "bookdata_01",
+            "source": "World Bank International Debt Report 2026",
+            "page": 87,
+            "text": "indicating the primary deficit or surplus that would keep the debt-to-GDP ratio unchanged, given the country’s existing debt, borrowing costs, and GDP growth.2 This calculation suggests that the continued elevation of GFNs is not primarily the result of a renewed widening of primary deficits. Rather, it reflects the debt stock accumulated following successive shocks, higher interest costs, the rollover of maturing obligations, and, in some cases, balance of payments financing needs. Figure 2.9 Change in Debt-Stabilizing Primary Deficit Across IDA-Eligible Countries, 2000–25 –30 –20 –10 0 10 20 30 20002001200220032004200520062007200820092010201120122013201420152016201720182019202020212022202320242025 % of GDP Sources: Original calculations based on data from country authorities.",
+            "metadata": {
+              "section": "fiscal_pressures",
+              "year": 2026,
+              "chapter": 2,
+              "char_count": 788,
+              "is_empty": false,
+              "chunk_index": 1,
+              "strategy": "by_paragraph"
+            },
+            "score": 0.032522,
+            "strategy": "hybrid_rrf",
+            "dense_rank": 2,
+            "lexical_rank": 1
+          },
+          {
+            "id": "bookdata_01_p88_b002",
+            "source_id": "bookdata_01",
+            "source": "World Bank International Debt Report 2026",
+            "page": 88,
+            "text": "Group and the International Monetary Fund, with that review approved by their respective Executive Boards in September 2026. The revised framework is expected to be finalized in 2027; box 2.2 summarizes its key features. Figure 2.10 Change in LIC-DSF External Risk Ratings, 2020–25 2 0 3 1 3 6 15 0 5 10 15 20 25 –5 –7 –3 –3 –2 –2 –22 2020 2021 2022 2023 2024 2025 2020–25 2020 2021 2022 2023 2024 2025 2020–25 0 –5 –10 –15 –20 –25 a. Number of downgrades b. Number of upgrades Source: World Bank–International Monetary Fund Debt Sustainability Framework for Low-Income Countries (LIC-DSF) as of December 2025. Note: In each panel, the final 2020–25 bar summarizes the total upgrades/downgrades for the period.",
+            "metadata": {
+              "section": "fiscal_pressures",
+              "year": 2026,
+              "chapter": 2,
+              "char_count": 710,
+              "is_empty": false,
+              "chunk_index": 2,
+              "strategy": "by_paragraph"
+            },
+            "score": 0.032522,
+            "strategy": "hybrid_rrf",
+            "dense_rank": 1,
+            "lexical_rank": 2
+          },
+          {
+            "id": "bookdata_01_p105_b002",
+            "source_id": "bookdata_01",
+            "source": "World Bank International Debt Report 2026",
+            "page": 105,
+            "text": "World Bank. 2012. Beyond the Annual Budget: Global Experience with Medium-Term Expenditure Frameworks. World Bank. https://openknowledge.worldbank.org/entities / publication/8dfe6a58-a6bb-5735-9723-d5244eb6fe5d. World Bank. 2025. International Debt Report 2025. World Bank. https://doi.org/10.1596/978 -1-4648-2262-9. World Bank. 2026a. Commodity Markets Outlook, April 2026. World Bank. https://openknowledge .worldbank.org/entities/publication/3ede6f8c-ba03-4176-867c-40e604698570. World Bank. 2026b. Global Economic Prospects, June 2026. World Bank. https://thedocs .worldbank.org/en/doc/2b672b3b0415d6b66c45b66579db4ef5-0050012026/global-economic -prospects-june-2026. World Bank. 2026c. “World Bank Board Endorses Reforms to the Bank-Fund Debt Sustainability",
+            "metadata": {
+              "section": "notes_references",
+              "year": 2026,
+              "chapter": 2,
+              "char_count": 763,
+              "is_empty": false,
+              "chunk_index": 2,
+              "strategy": "by_paragraph"
+            },
+            "score": 0.031498,
+            "strategy": "hybrid_rrf",
+            "dense_rank": 4,
+            "lexical_rank": 3
+          }
+        ],
+        "context": "[bookdata_01_p87_b001 | World Bank International Debt Report 2026 | page 87]\nindicating the primary deficit or surplus that would keep the debt-to-GDP ratio unchanged, given the country’s existing debt, borrowing costs, and GDP growth.2 This calculation suggests that the continued elevation of GFNs is not primarily the result of a renewed widening of primary deficits. Rather, it reflects the debt stock accumulated following successive shocks, higher interest costs, the rollover of maturing obligations, and, in some cases, balance of payments financing needs. Figure 2.9 Change in Debt-Stabilizing Primary Deficit Across IDA-Eligible Countries, 2000–25 –30 –20 –10 0 10 20 30 20002001200220032004200520062007200820092010201120122013201420152016201720182019202020212022202320242025 % of GDP Sources: Original calculations based on data from country authorities.\n\n[bookdata_01_p88_b002 | World Bank International Debt Report 2026 | page 88]\nGroup and the International Monetary Fund, with that review approved by their respective Executive Boards in September 2026. The revised framework is expected to be finalized in 2027; box 2.2 summarizes its key features. Figure 2.10 Change in LIC-DSF External Risk Ratings, 2020–25 2 0 3 1 3 6 15 0 5 10 15 20 25 –5 –7 –3 –3 –2 –2 –22 2020 2021 2022 2023 2024 2025 2020–25 2020 2021 2022 2023 2024 2025 2020–25 0 –5 –10 –15 –20 –25 a. Number of downgrades b. Number of upgrades Source: World Bank–International Monetary Fund Debt Sustainability Framework for Low-Income Countries (LIC-DSF) as of December 2025. Note: In each panel, the final 2020–25 bar summarizes the total upgrades/downgrades for the period.",
+        "context_ids": [
+          "bookdata_01_p87_b001",
+          "bookdata_01_p88_b002"
+        ]
+      },
+      {
+        "event": "invalid_or_missing_citations"
+      }
+    ],
+    "elapsed_ms": 7644.690417000675,
+    "gold": [],
+    "expected_answer": "Không đủ bằng chứng trong tài liệu để trả lời."
+  }
+]

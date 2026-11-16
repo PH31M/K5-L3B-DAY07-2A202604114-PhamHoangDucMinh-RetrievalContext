@@ -9,6 +9,7 @@ from __future__ import annotations
 import json
 import math
 import os
+import time
 import urllib.error
 import urllib.request
 from pathlib import Path
@@ -116,26 +117,39 @@ class DenseRetriever:
                 method="POST",
             )
 
-            try:
-                with urllib.request.urlopen(req, timeout=30) as resp:
-                    resp_data = json.loads(resp.read().decode("utf-8"))
+            last_error = None
+            success = False
+            for attempt in range(1, 4):
+                try:
+                    with urllib.request.urlopen(req, timeout=30) as resp:
+                        resp_data = json.loads(resp.read().decode("utf-8"))
 
-                data_items = sorted(resp_data.get("data", []), key=lambda x: x.get("index", 0))
-                for item in data_items:
-                    vec = item["embedding"]
-                    if len(vec) != self.dimensions:
-                        raise ValueError(
-                            f"Sai lệch số chiều vector: kỳ vọng {self.dimensions}, nhận được {len(vec)}"
-                        )
-                    all_embeddings.append(vec)
+                    data_items = sorted(resp_data.get("data", []), key=lambda x: x.get("index", 0))
+                    for item in data_items:
+                        vec = item["embedding"]
+                        if len(vec) != self.dimensions:
+                            raise ValueError(
+                                f"Sai lệch số chiều vector: kỳ vọng {self.dimensions}, nhận được {len(vec)}"
+                            )
+                        all_embeddings.append(vec)
+                    success = True
+                    break
 
-            except urllib.error.HTTPError as e:
-                err_body = e.read().decode("utf-8") if e.fp else ""
-                raise RuntimeError(
-                    f"Lỗi API Embedding (HTTP {e.code}): {e.reason}\nChi tiết: {err_body}"
-                ) from e
-            except Exception as e:
-                raise RuntimeError(f"Lỗi kết nối khi gọi embedding: {e}") from e
+                except urllib.error.HTTPError as e:
+                    err_body = e.read().decode("utf-8") if e.fp else ""
+                    last_error = RuntimeError(
+                        f"Lỗi API Embedding (HTTP {e.code}): {e.reason}\nChi tiết: {err_body}"
+                    )
+                    if 400 <= e.code < 500 and e.code != 429:
+                        raise last_error from e
+                except Exception as e:
+                    last_error = e
+
+                if attempt < 3:
+                    time.sleep(attempt * 2)
+
+            if not success:
+                raise RuntimeError(f"Lỗi kết nối khi gọi embedding sau 3 lần thử: {last_error}") from last_error
 
         return all_embeddings
 
@@ -224,12 +238,7 @@ class DenseRetriever:
             # Tính điểm Cosine
             score = self._cosine_similarity(query_vec, self.chunk_vectors[c_id])
             scored_results.append({
-                "id": chunk["id"],
-                "source_id": chunk["source_id"],
-                "source": chunk["source"],
-                "page": chunk["page"],
-                "text": chunk["text"],
-                "metadata": chunk.get("metadata", {}),
+                **chunk,
                 "score": round(score, 6),
                 "strategy": "dense",
             })

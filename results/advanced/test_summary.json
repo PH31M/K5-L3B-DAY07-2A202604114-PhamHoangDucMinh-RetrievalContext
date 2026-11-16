@@ -1,0 +1,41 @@
+{
+  "split": "test",
+  "total_cases": 30,
+  "total_passed": 29,
+  "overall_pass_rate": 96.67,
+  "meets_90pct_threshold": true,
+  "total_elapsed_seconds": 170.77,
+  "avg_latency_ms": 5692.42,
+  "by_category": {
+    "table": {
+      "passed": 6,
+      "total": 6,
+      "rate": 100.0
+    },
+    "diagram": {
+      "passed": 4,
+      "total": 5,
+      "rate": 80.0
+    },
+    "chart": {
+      "passed": 5,
+      "total": 5,
+      "rate": 100.0
+    },
+    "multi_hop": {
+      "passed": 4,
+      "total": 4,
+      "rate": 100.0
+    },
+    "text": {
+      "passed": 4,
+      "total": 4,
+      "rate": 100.0
+    },
+    "abstain": {
+      "passed": 6,
+      "total": 6,
+      "rate": 100.0
+    }
+  }
+}

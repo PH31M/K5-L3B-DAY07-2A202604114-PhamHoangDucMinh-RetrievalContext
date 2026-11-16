@@ -1,0 +1,430 @@
+[
+  {
+    "query_id": "mm_test_01",
+    "category": "table",
+    "answerable": true,
+    "status": "answered",
+    "citations": [
+      "text_p027_b000"
+    ],
+    "citation_support": [
+      true
+    ],
+    "passed": true,
+    "answer_grade": 2,
+    "notes": "Đạt: Trả lời chính xác và trích dẫn đúng nguồn gốc."
+  },
+  {
+    "query_id": "mm_test_02",
+    "category": "table",
+    "answerable": true,
+    "status": "answered",
+    "citations": [
+      "chart_p062"
+    ],
+    "citation_support": [
+      true
+    ],
+    "passed": true,
+    "answer_grade": 2,
+    "notes": "Đạt: Trả lời chính xác và trích dẫn đúng nguồn gốc."
+  },
+  {
+    "query_id": "mm_test_03",
+    "category": "table",
+    "answerable": true,
+    "status": "answered",
+    "citations": [
+      "table_p195_india"
+    ],
+    "citation_support": [
+      true
+    ],
+    "passed": true,
+    "answer_grade": 2,
+    "notes": "Đạt: Trả lời chính xác và trích dẫn đúng nguồn gốc."
+  },
+  {
+    "query_id": "mm_test_04",
+    "category": "table",
+    "answerable": true,
+    "status": "answered",
+    "citations": [
+      "table_p196_indonesia"
+    ],
+    "citation_support": [
+      true
+    ],
+    "passed": true,
+    "answer_grade": 2,
+    "notes": "Đạt: Trả lời chính xác và trích dẫn đúng nguồn gốc."
+  },
+  {
+    "query_id": "mm_test_05",
+    "category": "table",
+    "answerable": true,
+    "status": "answered",
+    "citations": [
+      "table_p260_viet_nam"
+    ],
+    "citation_support": [
+      true
+    ],
+    "passed": true,
+    "answer_grade": 2,
+    "notes": "Đạt: Trả lời chính xác và trích dẫn đúng nguồn gốc."
+  },
+  {
+    "query_id": "mm_test_06",
+    "category": "table",
+    "answerable": true,
+    "status": "answered",
+    "citations": [
+      "table_p187_ghana"
+    ],
+    "citation_support": [
+      true
+    ],
+    "passed": true,
+    "answer_grade": 2,
+    "notes": "Đạt: Trả lời chính xác và trích dẫn đúng nguồn gốc."
+  },
+  {
+    "query_id": "mm_test_07",
+    "category": "diagram",
+    "answerable": true,
+    "status": "answered",
+    "citations": [
+      "diagram_p037"
+    ],
+    "citation_support": [
+      true
+    ],
+    "passed": true,
+    "answer_grade": 2,
+    "notes": "Đạt: Trả lời chính xác và trích dẫn đúng nguồn gốc."
+  },
+  {
+    "query_id": "mm_test_08",
+    "category": "diagram",
+    "answerable": true,
+    "status": "answered",
+    "citations": [
+      "diagram_p076"
+    ],
+    "citation_support": [
+      true
+    ],
+    "passed": true,
+    "answer_grade": 2,
+    "notes": "Đạt: Trả lời chính xác và trích dẫn đúng nguồn gốc."
+  },
+  {
+    "query_id": "mm_test_09",
+    "category": "diagram",
+    "answerable": true,
+    "status": "answered",
+    "citations": [
+      "diagram_p038"
+    ],
+    "citation_support": [
+      true
+    ],
+    "passed": true,
+    "answer_grade": 2,
+    "notes": "Đạt: Trả lời chính xác và trích dẫn đúng nguồn gốc."
+  },
+  {
+    "query_id": "mm_test_10",
+    "category": "diagram",
+    "answerable": true,
+    "status": "answered",
+    "citations": [
+      "text_p093_b000"
+    ],
+    "citation_support": [
+      true
+    ],
+    "passed": true,
+    "answer_grade": 2,
+    "notes": "Đạt: Trả lời chính xác và trích dẫn đúng nguồn gốc."
+  },
+  {
+    "query_id": "mm_test_11",
+    "category": "diagram",
+    "answerable": true,
+    "status": "abstain",
+    "citations": [],
+    "citation_support": [],
+    "passed": false,
+    "answer_grade": 0,
+    "notes": "Không đạt: Thiếu bằng chứng hoặc trích dẫn sai."
+  },
+  {
+    "query_id": "mm_test_12",
+    "category": "chart",
+    "answerable": true,
+    "status": "answered",
+    "citations": [
+      "chart_p030"
+    ],
+    "citation_support": [
+      true
+    ],
+    "passed": true,
+    "answer_grade": 2,
+    "notes": "Đạt: Trả lời chính xác và trích dẫn đúng nguồn gốc."
+  },
+  {
+    "query_id": "mm_test_13",
+    "category": "chart",
+    "answerable": true,
+    "status": "answered",
+    "citations": [
+      "chart_p050"
+    ],
+    "citation_support": [
+      true
+    ],
+    "passed": true,
+    "answer_grade": 2,
+    "notes": "Đạt: Trả lời chính xác và trích dẫn đúng nguồn gốc."
+  },
+  {
+    "query_id": "mm_test_14",
+    "category": "chart",
+    "answerable": true,
+    "status": "answered",
+    "citations": [
+      "chart_p058"
+    ],
+    "citation_support": [
+      true
+    ],
+    "passed": true,
+    "answer_grade": 2,
+    "notes": "Đạt: Trả lời chính xác và trích dẫn đúng nguồn gốc."
+  },
+  {
+    "query_id": "mm_test_15",
+    "category": "chart",
+    "answerable": true,
+    "status": "answered",
+    "citations": [
+      "chart_p090"
+    ],
+    "citation_support": [
+      true
+    ],
+    "passed": true,
+    "answer_grade": 2,
+    "notes": "Đạt: Trả lời chính xác và trích dẫn đúng nguồn gốc."
+  },
+  {
+    "query_id": "mm_test_16",
+    "category": "chart",
+    "answerable": true,
+    "status": "answered",
+    "citations": [
+      "chart_p097"
+    ],
+    "citation_support": [
+      true
+    ],
+    "passed": true,
+    "answer_grade": 2,
+    "notes": "Đạt: Trả lời chính xác và trích dẫn đúng nguồn gốc."
+  },
+  {
+    "query_id": "mm_test_17",
+    "category": "multi_hop",
+    "answerable": true,
+    "status": "answered",
+    "citations": [
+      "table_p195_india",
+      "table_p196_indonesia"
+    ],
+    "citation_support": [
+      true,
+      true
+    ],
+    "passed": true,
+    "answer_grade": 2,
+    "notes": "Đạt: Trả lời chính xác và trích dẫn đúng nguồn gốc."
+  },
+  {
+    "query_id": "mm_test_18",
+    "category": "multi_hop",
+    "answerable": true,
+    "status": "answered",
+    "citations": [
+      "chart_p080",
+      "chart_p081"
+    ],
+    "citation_support": [
+      true,
+      true
+    ],
+    "passed": true,
+    "answer_grade": 2,
+    "notes": "Đạt: Trả lời chính xác và trích dẫn đúng nguồn gốc."
+  },
+  {
+    "query_id": "mm_test_19",
+    "category": "multi_hop",
+    "answerable": true,
+    "status": "answered",
+    "citations": [
+      "chart_p085"
+    ],
+    "citation_support": [
+      true
+    ],
+    "passed": true,
+    "answer_grade": 2,
+    "notes": "Đạt: Trả lời chính xác và trích dẫn đúng nguồn gốc."
+  },
+  {
+    "query_id": "mm_test_20",
+    "category": "multi_hop",
+    "answerable": true,
+    "status": "answered",
+    "citations": [
+      "table_p260_viet_nam",
+      "table_p187_ghana"
+    ],
+    "citation_support": [
+      true,
+      true
+    ],
+    "passed": true,
+    "answer_grade": 2,
+    "notes": "Đạt: Trả lời chính xác và trích dẫn đúng nguồn gốc."
+  },
+  {
+    "query_id": "mm_test_21",
+    "category": "text",
+    "answerable": true,
+    "status": "answered",
+    "citations": [
+      "text_p075_b000"
+    ],
+    "citation_support": [
+      true
+    ],
+    "passed": true,
+    "answer_grade": 2,
+    "notes": "Đạt: Trả lời chính xác và trích dẫn đúng nguồn gốc."
+  },
+  {
+    "query_id": "mm_test_22",
+    "category": "text",
+    "answerable": true,
+    "status": "answered",
+    "citations": [
+      "chart_p078"
+    ],
+    "citation_support": [
+      true
+    ],
+    "passed": true,
+    "answer_grade": 2,
+    "notes": "Đạt: Trả lời chính xác và trích dẫn đúng nguồn gốc."
+  },
+  {
+    "query_id": "mm_test_23",
+    "category": "text",
+    "answerable": true,
+    "status": "answered",
+    "citations": [
+      "text_p092_b000"
+    ],
+    "citation_support": [
+      true
+    ],
+    "passed": true,
+    "answer_grade": 2,
+    "notes": "Đạt: Trả lời chính xác và trích dẫn đúng nguồn gốc."
+  },
+  {
+    "query_id": "mm_test_24",
+    "category": "text",
+    "answerable": true,
+    "status": "answered",
+    "citations": [
+      "text_p095_b000"
+    ],
+    "citation_support": [
+      true
+    ],
+    "passed": true,
+    "answer_grade": 2,
+    "notes": "Đạt: Trả lời chính xác và trích dẫn đúng nguồn gốc."
+  },
+  {
+    "query_id": "mm_test_25",
+    "category": "abstain",
+    "answerable": false,
+    "status": "abstain",
+    "citations": [],
+    "citation_support": [],
+    "passed": true,
+    "abstention_correct": true,
+    "notes": "Đạt: Từ chối chính xác câu thiếu dữ kiện."
+  },
+  {
+    "query_id": "mm_test_26",
+    "category": "abstain",
+    "answerable": false,
+    "status": "abstain",
+    "citations": [],
+    "citation_support": [],
+    "passed": true,
+    "abstention_correct": true,
+    "notes": "Đạt: Từ chối chính xác câu thiếu dữ kiện."
+  },
+  {
+    "query_id": "mm_test_27",
+    "category": "abstain",
+    "answerable": false,
+    "status": "abstain",
+    "citations": [],
+    "citation_support": [],
+    "passed": true,
+    "abstention_correct": true,
+    "notes": "Đạt: Từ chối chính xác câu thiếu dữ kiện."
+  },
+  {
+    "query_id": "mm_test_28",
+    "category": "abstain",
+    "answerable": false,
+    "status": "abstain",
+    "citations": [],
+    "citation_support": [],
+    "passed": true,
+    "abstention_correct": true,
+    "notes": "Đạt: Từ chối chính xác câu thiếu dữ kiện."
+  },
+  {
+    "query_id": "mm_test_29",
+    "category": "abstain",
+    "answerable": false,
+    "status": "abstain",
+    "citations": [],
+    "citation_support": [],
+    "passed": true,
+    "abstention_correct": true,
+    "notes": "Đạt: Từ chối chính xác câu thiếu dữ kiện."
+  },
+  {
+    "query_id": "mm_test_30",
+    "category": "abstain",
+    "answerable": false,
+    "status": "abstain",
+    "citations": [],
+    "citation_support": [],
+    "passed": true,
+    "abstention_correct": true,
+    "notes": "Đạt: Từ chối chính xác câu thiếu dữ kiện."
+  }
+]

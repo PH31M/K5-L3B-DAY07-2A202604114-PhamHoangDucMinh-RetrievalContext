@@ -1,0 +1,72 @@
+[
+  {
+    "query_id": "test_01",
+    "citation_support": [
+      true
+    ],
+    "answer_grade": 1,
+    "notes": "Trả lời một phần hoặc trích dẫn chưa tối ưu."
+  },
+  {
+    "query_id": "test_02",
+    "citation_support": [
+      true
+    ],
+    "answer_grade": 1,
+    "notes": "Trả lời một phần hoặc trích dẫn chưa tối ưu."
+  },
+  {
+    "query_id": "test_03",
+    "citation_support": [
+      true
+    ],
+    "answer_grade": 2,
+    "notes": "Chính xác, đầy đủ bằng chứng và trích dẫn chuẩn xác."
+  },
+  {
+    "query_id": "test_04",
+    "citation_support": [
+      true
+    ],
+    "answer_grade": 1,
+    "notes": "Trả lời một phần hoặc trích dẫn chưa tối ưu."
+  },
+  {
+    "query_id": "test_05",
+    "citation_support": [
+      true
+    ],
+    "answer_grade": 2,
+    "notes": "Chính xác, đầy đủ bằng chứng và trích dẫn chuẩn xác."
+  },
+  {
+    "query_id": "test_06",
+    "citation_support": [],
+    "abstention_correct": true,
+    "notes": "Từ chối đúng do tài liệu không chứa bằng chứng."
+  },
+  {
+    "query_id": "test_07",
+    "citation_support": [],
+    "abstention_correct": true,
+    "notes": "Từ chối đúng do tài liệu không chứa bằng chứng."
+  },
+  {
+    "query_id": "test_08",
+    "citation_support": [],
+    "abstention_correct": true,
+    "notes": "Từ chối đúng do tài liệu không chứa bằng chứng."
+  },
+  {
+    "query_id": "test_09",
+    "citation_support": [],
+    "abstention_correct": true,
+    "notes": "Từ chối đúng do tài liệu không chứa bằng chứng."
+  },
+  {
+    "query_id": "test_10",
+    "citation_support": [],
+    "abstention_correct": true,
+    "notes": "Từ chối đúng do tài liệu không chứa bằng chứng."
+  }
+]

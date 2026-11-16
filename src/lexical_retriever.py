@@ -103,12 +103,7 @@ class LexicalRetriever:
 
             if score > 0.0:
                 scored_results.append({
-                    "id": chunk["id"],
-                    "source_id": chunk["source_id"],
-                    "source": chunk["source"],
-                    "page": chunk["page"],
-                    "text": chunk["text"],
-                    "metadata": chunk.get("metadata", {}),
+                    **chunk,
                     "score": round(score, 6),
                     "strategy": "lexical_bm25",
                 })

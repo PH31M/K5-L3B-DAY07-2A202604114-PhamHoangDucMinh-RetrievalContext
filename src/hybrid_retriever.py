@@ -74,12 +74,7 @@ class HybridRetriever:
         for c_id, score in sorted_candidates[:top_k]:
             chunk = self.chunk_map[c_id]
             final_results.append({
-                "id": chunk["id"],
-                "source_id": chunk["source_id"],
-                "source": chunk["source"],
-                "page": chunk["page"],
-                "text": chunk["text"],
-                "metadata": chunk.get("metadata", {}),
+                **chunk,
                 "score": round(score, 6),
                 "strategy": "hybrid_rrf",
                 "dense_rank": dense_ranks.get(c_id),

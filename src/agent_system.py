@@ -29,7 +29,7 @@ class AgenticRAGSystem:
         retriever: Optional[HybridRetriever] = None,
         max_searches: int = 3,
         top_k: int = 3,
-        budget: int = 1200,
+        budget: int = 2400,
     ) -> None:
         self.controller = controller or AgentController()
         self.retriever = retriever or HybridRetriever()

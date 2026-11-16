@@ -1,0 +1,72 @@
+[
+  {
+    "id": "test_01",
+    "split": "test",
+    "question": "What external disruptions make economies that rely heavily on imports of goods and services especially vulnerable?",
+    "answerable": true,
+    "expected_behavior": "search_and_answer"
+  },
+  {
+    "id": "test_02",
+    "split": "test",
+    "question": "How do drops in global commodity prices adversely affect commodity-exporting LMICs?",
+    "answerable": true,
+    "expected_behavior": "search_and_answer"
+  },
+  {
+    "id": "test_03",
+    "split": "test",
+    "question": "What global events after the pandemic shock contributed to elevated financing needs in IDA countries?",
+    "answerable": true,
+    "expected_behavior": "search_and_answer"
+  },
+  {
+    "id": "test_04",
+    "split": "test",
+    "question": "In the section on fiscal pressures and consolidation, how long did countries typically delay meaningful consolidation when facing primary deficits far above debt-stabilizing levels?",
+    "answerable": true,
+    "expected_behavior": "search_and_answer"
+  },
+  {
+    "id": "test_05",
+    "split": "test",
+    "question": "What specific reserve mechanisms and financial instruments can governments put in place in advance to mitigate immediate post-disaster fiscal impacts?",
+    "answerable": true,
+    "expected_behavior": "search_and_answer"
+  },
+  {
+    "id": "test_06",
+    "split": "test",
+    "question": "What was the total volume of local-currency green bonds issued by the government of Indonesia in 2025?",
+    "answerable": false,
+    "expected_behavior": "search_and_abstain"
+  },
+  {
+    "id": "test_07",
+    "split": "test",
+    "question": "What was the monthly consumer price index (CPI) headline inflation rate recorded in Argentina in September 2026?",
+    "answerable": false,
+    "expected_behavior": "search_and_abstain"
+  },
+  {
+    "id": "test_08",
+    "split": "test",
+    "question": "What is the exact mathematical weighting formula used by the IMF to calculate SDR interest rate allocations in 2026?",
+    "answerable": false,
+    "expected_behavior": "search_and_abstain"
+  },
+  {
+    "id": "test_09",
+    "split": "test",
+    "question": "How many metric tons of milling wheat did the government of Egypt purchase from Romania under government tender in August 2025?",
+    "answerable": false,
+    "expected_behavior": "search_and_abstain"
+  },
+  {
+    "id": "test_10",
+    "split": "test",
+    "question": "What was the targeted primary budget surplus agreed between Pakistan and the IMF under their 2025 Extended Fund Facility review?",
+    "answerable": false,
+    "expected_behavior": "search_and_abstain"
+  }
+]

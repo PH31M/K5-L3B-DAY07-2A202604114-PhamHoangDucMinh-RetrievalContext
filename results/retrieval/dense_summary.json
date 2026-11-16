@@ -1,14 +1,14 @@
 {
   "strategy": "Dense (Embedding 3 Small)",
-  "n": 15,
-  "hit1_count": 12,
-  "hit1_rate": 80.0,
-  "hit3_count": 15,
-  "hit3_rate": 100.0,
-  "context_hit_count": 12,
-  "context_hit_rate": 80.0,
-  "avg_context_chars": 813,
-  "median_ms": 1072.117,
-  "avg_ms": 1208.624,
-  "total_cost_usd": 3e-06
+  "n": 5,
+  "hit1_count": 2,
+  "hit1_rate": 40.0,
+  "hit3_count": 3,
+  "hit3_rate": 60.0,
+  "context_hit_count": 2,
+  "context_hit_rate": 40.0,
+  "avg_context_chars": 837.2,
+  "median_ms": 1018.465,
+  "avg_ms": 1404.074,
+  "total_cost_usd": 1e-06
 }

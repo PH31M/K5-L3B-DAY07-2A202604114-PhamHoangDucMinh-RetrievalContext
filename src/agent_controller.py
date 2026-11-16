@@ -105,19 +105,27 @@ class AgentController:
         - action: 'answer' kèm 'answer' và 'citations' nếu đã đủ bằng chứng hoặc không có bằng chứng (abstain).
         """
         system_prompt = (
-            "You are an Agentic RAG Controller evaluating evidence from Chapter 2 of the World Bank International Debt Report 2026.\n"
+            "You are an Agentic RAG Controller evaluating evidence from the World Bank International Debt Report 2026.\n"
             "Your job is to answer user questions using ONLY facts directly substantiated by the provided context chunks.\n\n"
             "Decision Rules:\n"
-            "1. IF you have NOT performed any search yet, or if the current context is empty or missing key information to answer the question:\n"
-            '   Return JSON: {"action": "search", "query": "<focused search keywords without punctuation>"}\n'
-            "2. IF the context contains the necessary and sufficient evidence to answer:\n"
+            "1. SEARCH QUERY FORMULATION:\n"
+            "   When formulating search queries, ALWAYS preserve discriminating entity names: country names (e.g. India, Ghana, Viet Nam, Indonesia), "
+            "table/figure identifiers (e.g. Table 1.1, Figure 2.1, Figure 1.5, Box 1.2), and EXACT page numbers if mentioned in the question (e.g. page 28, page 30, page 77, page 195).\n"
+            '   Return JSON: {"action": "search", "query": "<focused search keywords including key entities and page numbers>"}\n\n'
+            "2. ANSWERING WITH CITATIONS:\n"
+            "   IF the context contains the necessary and sufficient evidence to answer:\n"
             "   Formulate a concise, factual answer.\n"
             "   You MUST cite the supporting chunk IDs in the text as [chunk-id] and in the citations array.\n"
             '   Return JSON: {"action": "answer", "answer": "<answer text with [chunk-id]>", "citations": ["<chunk-id>"]}\n'
-            "   Every citation in the array MUST appear in your answer and MUST exist in the context.\n"
-            "3. IF a search was already performed, but the retrieved context clearly DOES NOT contain the answer (e.g. facts about other countries, specific dates, or figures absent from the report):\n"
+            "   Every citation in the array MUST appear in your answer and MUST exist in the context.\n\n"
+            "3. MULTI-STEP REFORMULATION:\n"
+            "   IF a search was performed but the context is still missing the required data, and you have search attempts remaining:\n"
+            "   Reformulate your search query with more specific terms (e.g. search with the exact country name, table name, or figure number).\n"
+            '   Return JSON: {"action": "search", "query": "<reformulated keywords>"}\n\n'
+            "4. ABSTAINING (FOR UNANSWERABLE QUESTIONS):\n"
+            "   IF after searching (or if the question asks for facts definitely outside the report like non-LMIC sovereign statistics, daily bond yields, private firm metrics, or cryptocurrency):\n"
             '   Return JSON: {"action": "answer", "answer": "Không đủ bằng chứng trong tài liệu để trả lời.", "citations": []}\n'
-            "   Do NOT invent or guess any facts.\n\n"
+            "   Do NOT invent, guess, or hallucinate any facts.\n\n"
             "Output MUST be valid JSON only."
         )
 
@@ -171,6 +179,18 @@ class AgentController:
             if not isinstance(citations, list):
                 citations = []
             citations = [str(c).strip() for c in citations if str(c).strip()]
+
+            # Chuẩn hóa trích dẫn dạng [id1, id2] thành [id1] [id2] theo đúng hợp đồng của starter/agentic.py
+            for c in citations:
+                if f"[{c}]" not in answer:
+                    answer = re.sub(
+                        rf"\[([^\]]*\b{re.escape(c)}\b[^\]]*)\]",
+                        lambda m: " ".join(f"[{x.strip()}]" for x in m.group(1).split(",")),
+                        answer,
+                    )
+                if f"[{c}]" not in answer:
+                    answer = f"{answer} [{c}]"
+
             return {"action": "answer", "answer": answer, "citations": citations}
 
         else:

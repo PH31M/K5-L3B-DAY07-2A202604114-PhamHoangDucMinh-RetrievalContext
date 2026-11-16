@@ -1,14 +1,14 @@
 {
   "strategy": "Hybrid (Dense + BM25 RRF)",
-  "n": 15,
-  "hit1_count": 14,
-  "hit1_rate": 93.33,
-  "hit3_count": 15,
+  "n": 5,
+  "hit1_count": 2,
+  "hit1_rate": 40.0,
+  "hit3_count": 5,
   "hit3_rate": 100.0,
-  "context_hit_count": 14,
-  "context_hit_rate": 93.33,
-  "avg_context_chars": 835.3,
-  "median_ms": 1035.915,
-  "avg_ms": 1052.304,
-  "total_cost_usd": 3e-06
+  "context_hit_count": 2,
+  "context_hit_rate": 40.0,
+  "avg_context_chars": 891.2,
+  "median_ms": 979.468,
+  "avg_ms": 1625.746,
+  "total_cost_usd": 1e-06
 }

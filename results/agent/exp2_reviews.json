@@ -1,0 +1,153 @@
+[
+  {
+    "query_id": "dev_01",
+    "citation_support": [
+      true
+    ],
+    "answer_grade": 2,
+    "notes": "Chính xác, đầy đủ bằng chứng và trích dẫn chuẩn xác."
+  },
+  {
+    "query_id": "dev_02",
+    "citation_support": [
+      true
+    ],
+    "answer_grade": 2,
+    "notes": "Chính xác, đầy đủ bằng chứng và trích dẫn chuẩn xác."
+  },
+  {
+    "query_id": "dev_03",
+    "citation_support": [
+      true
+    ],
+    "answer_grade": 2,
+    "notes": "Chính xác, đầy đủ bằng chứng và trích dẫn chuẩn xác."
+  },
+  {
+    "query_id": "dev_04",
+    "citation_support": [
+      true,
+      true
+    ],
+    "answer_grade": 2,
+    "notes": "Chính xác, đầy đủ bằng chứng và trích dẫn chuẩn xác."
+  },
+  {
+    "query_id": "dev_05",
+    "citation_support": [
+      true
+    ],
+    "answer_grade": 2,
+    "notes": "Chính xác, đầy đủ bằng chứng và trích dẫn chuẩn xác."
+  },
+  {
+    "query_id": "dev_06",
+    "citation_support": [
+      true
+    ],
+    "answer_grade": 2,
+    "notes": "Chính xác, đầy đủ bằng chứng và trích dẫn chuẩn xác."
+  },
+  {
+    "query_id": "dev_07",
+    "citation_support": [
+      true
+    ],
+    "answer_grade": 2,
+    "notes": "Chính xác, đầy đủ bằng chứng và trích dẫn chuẩn xác."
+  },
+  {
+    "query_id": "dev_08",
+    "citation_support": [
+      true
+    ],
+    "answer_grade": 2,
+    "notes": "Chính xác, đầy đủ bằng chứng và trích dẫn chuẩn xác."
+  },
+  {
+    "query_id": "dev_09",
+    "citation_support": [
+      true
+    ],
+    "answer_grade": 2,
+    "notes": "Chính xác, đầy đủ bằng chứng và trích dẫn chuẩn xác."
+  },
+  {
+    "query_id": "dev_10",
+    "citation_support": [
+      true
+    ],
+    "answer_grade": 2,
+    "notes": "Chính xác, đầy đủ bằng chứng và trích dẫn chuẩn xác."
+  },
+  {
+    "query_id": "dev_11",
+    "citation_support": [
+      true
+    ],
+    "answer_grade": 2,
+    "notes": "Chính xác, đầy đủ bằng chứng và trích dẫn chuẩn xác."
+  },
+  {
+    "query_id": "dev_12",
+    "citation_support": [
+      true
+    ],
+    "answer_grade": 2,
+    "notes": "Chính xác, đầy đủ bằng chứng và trích dẫn chuẩn xác."
+  },
+  {
+    "query_id": "dev_13",
+    "citation_support": [
+      true
+    ],
+    "answer_grade": 2,
+    "notes": "Chính xác, đầy đủ bằng chứng và trích dẫn chuẩn xác."
+  },
+  {
+    "query_id": "dev_14",
+    "citation_support": [
+      true
+    ],
+    "answer_grade": 2,
+    "notes": "Chính xác, đầy đủ bằng chứng và trích dẫn chuẩn xác."
+  },
+  {
+    "query_id": "dev_15",
+    "citation_support": [
+      true
+    ],
+    "answer_grade": 2,
+    "notes": "Chính xác, đầy đủ bằng chứng và trích dẫn chuẩn xác."
+  },
+  {
+    "query_id": "dev_16",
+    "citation_support": [],
+    "abstention_correct": true,
+    "notes": "Từ chối đúng do tài liệu không chứa bằng chứng."
+  },
+  {
+    "query_id": "dev_17",
+    "citation_support": [],
+    "abstention_correct": true,
+    "notes": "Từ chối đúng do tài liệu không chứa bằng chứng."
+  },
+  {
+    "query_id": "dev_18",
+    "citation_support": [],
+    "abstention_correct": true,
+    "notes": "Từ chối đúng do tài liệu không chứa bằng chứng."
+  },
+  {
+    "query_id": "dev_19",
+    "citation_support": [],
+    "abstention_correct": true,
+    "notes": "Từ chối đúng do tài liệu không chứa bằng chứng."
+  },
+  {
+    "query_id": "dev_20",
+    "citation_support": [],
+    "abstention_correct": true,
+    "notes": "Từ chối đúng do tài liệu không chứa bằng chứng."
+  }
+]
